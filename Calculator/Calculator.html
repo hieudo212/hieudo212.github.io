@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="screen">
+			<p id="value"></p>	
+		</div>
+		<div class="button">
+			<button onclick="press(this)">7</button>
+			<button onclick="press(this)">8</button>
+			<button onclick="press(this)">9</button>
+			<button onclick="press(this)">+</button>
+			<button onclick="btnSqrt()">&radic;</button>
+			<br/>
+			<button onclick="press(this)">4</button>
+			<button onclick="press(this)">5</button>
+			<button onclick="press(this)">6</button>
+			<button onclick="press(this)">-</button>
+			<button onclick="btnSq()">x&sup2;</button>
+			<br/>
+			<button onclick="press(this)">1</button>
+			<button onclick="press(this)">2</button>
+			<button onclick="press(this)">3</button>
+			<button onclick="press(this)">&times;</button>
+			<button onclick="btnFact()">x!</button>
+			<br/>
+			<button onclick="press(this)">0</button>
+			<button onclick="btnPerc()">%</button>
+			<button onclick="btnDot()">.</button>
+			<button onclick="press(this)">&divide;</button>
+			<button onclick="btnInv()">1/x</button>
+			<br/>
+			<button onclick="btnEqual()" class="double">=</button>
+			<button onclick="clr()">C</button>
+			<button onclick="backSpace()">&larr;</button>
+			<button onclick="btnMinus()">-x</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
