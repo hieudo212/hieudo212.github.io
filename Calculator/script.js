@@ -1,39 +1,38 @@
 var btnVal = '';
-document.getElementById('value').innerText = '';
 var operation = ["+","-","×","÷"];
 var lastChar = '';
 var dot = false;
+var input = document.getElementById('value').innerText;	
 
 function press (button){
 	btnVal = button.innerHTML;
-	var input = document.getElementById('value').innerText;
 	if (operation.indexOf(btnVal) > -1){
 		if (operation.indexOf(lastChar) > -1 && lastChar != '') {
-			document.getElementById('value').innerText = input.substr(0,input.length-1)+btnVal;
+			input = input.substr(0,input.length-1)+btnVal;
 			lastChar = btnVal;
 			dot = false;
 		} else if (operation.indexOf(lastChar) == -1 && lastChar != '') {
-			document.getElementById('value').innerText += btnVal;
+			input += btnVal;
 			lastChar = btnVal;
 			dot = false;
 		} 		
 	}  else {
-		document.getElementById('value').innerText += btnVal;
+		input += btnVal;
 		lastChar = btnVal;
 	}
+	document.getElementById('value').innerText = input;
 }
 
 function btnDot(){
-	var input = document.getElementById('value').innerText;
 	if (!dot) {
-		document.getElementById('value').innerText = input + '.';
+		input = input + '.';
 	} 
 	lastChar = '.';
 	dot = true;
+	document.getElementById('value').innerText = input;
 }
 
 function checkDot(){
-	var input = document.getElementById('value').innerText;
 	if (input.search(/\./) > -1){
 		dot=true;
 	} else {
@@ -41,76 +40,70 @@ function checkDot(){
 	}
 }
 
+function update(){
+	lastChar = input.slice(-1);
+	checkDot();
+	document.getElementById('value').innerText = input;
+}
+
 function backSpace(){
-	var input = document.getElementById('value').innerText;
-	document.getElementById('value').innerText = input.substr(0,input.length-1);
-	lastChar = input.slice(-2,-1);
-	if (input.slice(-1) == '.') {
+	var remove = input.slice(-1);
+	input = input.substr(0,input.length-1);
+	lastChar = input.slice(-1);
+	if (remove == '.') {
 		dot = false;
 	} else {
 		checkDot();
-	}	
+	}
+	document.getElementById('value').innerText = input;	
 }
 
 function clr(){
-	document.getElementById('value').innerText = "";
+	input = "";
 	lastChar = '';
 	dot=false;
+	document.getElementById('value').innerText = input;
 }
 
 function btnEqual(){
-	var input = document.getElementById('value').innerText;
 	input = input.replace(/×/g, '*').replace(/÷/g, '/');
-	document.getElementById('value').innerText = eval(input);
-	lastChar = document.getElementById('value').innerText.slice(-1);
-	checkDot();
+	input = eval(input).toString();
+	update();
 }
 
 function btnSqrt(){
-	var input = document.getElementById('value').innerText;
-	document.getElementById('value').innerText = Math.sqrt(input);
-	lastChar = document.getElementById('value').innerText.slice(-1);
-	checkDot();
+	input = Math.sqrt(input).toString();
+	update();
 }
 
 function btnSq(){
-	var input = document.getElementById('value').innerText;
-	document.getElementById('value').innerText = input*input;
-	lastChar = document.getElementById('value').innerText.slice(-1);
-	checkDot();	
+	input = (input*input).toString();
+	update();
 }
 
 function btnFact(){
-	var input = Number(document.getElementById('value').innerText);
 	var factorial = 1;
-	if (Number.isInteger(input)){
+	if (Number.isInteger(Number(input)) && Number(input) >= 0){
 		for (var i = 1; i<=input; i++){
 			factorial *=i;
 		}
 	}
 	else {factorial='invalid'}
-	document.getElementById('value').innerText = factorial;
-	lastChar = document.getElementById('value').innerText.slice(-1);
-	checkDot();		
+	input = factorial.toString();
+	update();
 }
 
 function btnInv(){
-	var input = document.getElementById('value').innerText;
-	document.getElementById('value').innerText = 1/input;
-	lastChar = document.getElementById('value').innerText.slice(-1);
-	checkDot();			
+	input = (1/input).toString();
+	update();
 }
 
 function btnMinus(){
-	var input = document.getElementById('value').innerText;
-	document.getElementById('value').innerText = -input;
-	lastChar = document.getElementById('value').innerText.slice(-1);
-	checkDot();	
+	input = (-input).toString();
+	update();
 }
 
 function btnPerc(){
-	var input = document.getElementById('value').innerText;
-	document.getElementById('value').innerText = input/100;
-	lastChar = document.getElementById('value').innerText.slice(-1);
-	checkDot();				
+	input = (input/100).toString();
+	update();
 }
