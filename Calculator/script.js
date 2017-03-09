@@ -11,15 +11,16 @@ function press (button){
 		if (operation.indexOf(lastChar) > -1 && lastChar != '') {
 			document.getElementById('value').innerText = input.substr(0,input.length-1)+btnVal;
 			lastChar = btnVal;
+			dot = false;
 		} else if (operation.indexOf(lastChar) == -1 && lastChar != '') {
 			document.getElementById('value').innerText += btnVal;
 			lastChar = btnVal;
+			dot = false;
 		} 		
 	}  else {
 		document.getElementById('value').innerText += btnVal;
 		lastChar = btnVal;
 	}
-	checkDot();
 }
 
 function btnDot(){
@@ -41,10 +42,14 @@ function checkDot(){
 }
 
 function backSpace(){
-	var temp = document.getElementById('value').innerText;
-	document.getElementById('value').innerText = temp.substr(0,temp.length-1);
-	lastChar = temp.slice(-2,-1);
-	checkDot();
+	var input = document.getElementById('value').innerText;
+	document.getElementById('value').innerText = input.substr(0,input.length-1);
+	lastChar = input.slice(-2,-1);
+	if (input.slice(-1) == '.') {
+		dot = false;
+	} else {
+		checkDot();
+	}	
 }
 
 function clr(){
