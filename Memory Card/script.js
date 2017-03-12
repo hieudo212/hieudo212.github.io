@@ -22,10 +22,10 @@ function flip(card){
 
 $(document).ready(function() {
     card = shuffle(card);
-    var html='';
+    var content='';
     for (var i=0;i<card.length;i++){
     	html+='<div class="card" onclick = "flip(this)">' + '<img class="back" data-id="' + card[i] + '" src="img/back.jpg"/>' + '<img class="front" src="img/' + card[i] + '.jpg"/></div>';
     }
-    $('.wrap').html(html);
+    $('.wrap').html(content);
 });
 
