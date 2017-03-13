@@ -1,4 +1,5 @@
 var card = ['1','7','10','11','14','16','1','7','10','11','14','16'];
+var current = null;
 
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -15,17 +16,41 @@ function shuffle(array) {
 }
 
 function flip(card){
-	if (!$(card).hasClass('flipped')){
-		$(card).toggleClass('flipped');
-	}	
+	$(card).css('pointer-events', 'none');
+    $(card).toggleClass('flipped');
+	
+    if (!current) {
+        current = $(card);    
+    } else {
+        $('.card').css('pointer-events', 'none');
+        if (current.attr('data-name') != $(card).attr('data-name')) {
+            setTimeout(function(){
+                document.getElementById('incorrect').play();
+                current.toggleClass('flipped');
+                $(card).toggleClass('flipped');
+                current = null;
+                $('.card').css('pointer-events', 'auto');
+            },500);
+        } else {
+            setTimeout(function(){
+                document.getElementById('correct').play();                                
+                current.css('opacity','0');
+                $(card).css('opacity','0');
+                current = null;
+                $('.card').css('pointer-events', 'auto');
+            },500);
+        }
+    }
 }
 
 $(document).ready(function() {
     card = shuffle(card);
-    var content='';
+    var html='';
     for (var i=0;i<card.length;i++){
-    	content+='<div class="card" onclick = "flip(this)">' + '<img class="back" data-id="' + card[i] + '" src="img/back.jpg"/>' + '<img class="front" src="img/' + card[i] + '.jpg"/></div>';
+    	html+='<div class="card" data-name="' + card[i] + '" onclick = "flip(this)">' + 
+        '<img class="back" src="img/back.jpg"/>' + 
+        '<img class="front" src="img/' + card[i] + '.jpg"/></div>';
     }
-    $('.wrap').html(content);
+    $('.wrap').html(html);
 });
 
