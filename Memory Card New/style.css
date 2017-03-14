@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+	font-family: "Courier New", Courier, monospace;
+}
+html {
+    background: url(img/bg1.jpg) no-repeat center fixed; 
+    background-size: cover;
+}
+h1 {
+	text-transform: uppercase;
+	color: #fff;
+}
+.wrap {
+	margin: auto;
+	max-width: 600px;
+}
+.content{
+	max-width: 100%;
+}
+.card img {
+	max-width: 92%;
+	margin:4%;
+	border-style: solid;
+	border-color: #5f9ea0;
+	border-width: thick;
+	border-radius: 5%;
+	transition: all 0.3s linear;
+}
+.card {
+	max-width: 25%;
+	float: left;
+	position: relative;
+	text-align: center;
+	transition: opacity 0.5s;
+}
+.card .front {
+	position: absolute;
+	top:0px;
+	left:0px;
+	transform: rotateY(180deg);
+}
+.card .front, .card .back {
+	transition: all 0.5s;
+	backface-visibility: hidden;
+}
+.card .back:hover {
+	box-shadow: 0px 0px 15px 5px rgba(127,255,212,0.75);
+}
+.card.flipped .front{
+	transform: rotateY(0deg);
+}
+.card.flipped .back {
+	transform: rotateY(180deg);
+}
+
+.cover {
+	background-color: #000;
+	opacity: 0.5;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 100;
+}
+.dialog {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 200;
+}
+.dialog .message {
+	background-color: #5f9ea0;
+	text-align: center;
+	border-radius: 20px;
+	margin: 10% auto;
+	padding: 10px;
+	width: 600px;
+}
+.btn {
+	font-size: 18px;
+	color: #fff;
+	padding: 10px;
+	background-color: #80b1b3;
+	margin-bottom: 20px;
+	border-radius: 10%;
+}
+.timer {
+	margin: 20px;
+}
+.timer progress {
+	width: 100%;
+	color: #5f9ea0;
+}
