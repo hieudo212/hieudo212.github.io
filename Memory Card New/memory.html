@@ -7,7 +7,7 @@
 <body>
 	<div class="wrap">
 		<div class="timer">
-			<progress class="bar" max="90" value="90"></progress>
+			<progress class="bar" max="30" value="30"></progress>
 		</div>
 		<div class="content">
 			
@@ -23,11 +23,20 @@
 
 	<div class="cover"></div>
 	
+	<audio id="background">
+		<source src="audio/background.mp3" type="audio/mpeg">
+	</audio>
 	<audio id="correct">
 		<source src="audio/correct.mp3" type="audio/mpeg">
 	</audio>
 	<audio id="incorrect">
 		<source src="audio/incorrect.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="win">
+		<source src="audio/win.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="lose">
+		<source src="audio/lose.mp3" type="audio/mpeg">
 	</audio>
 	<script type="text/javascript" src="jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="script.js"></script>

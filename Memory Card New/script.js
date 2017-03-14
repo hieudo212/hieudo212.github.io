@@ -17,6 +17,11 @@ function shuffle(array) {
   return array;
 }
 
+function sound(type) {
+    document.getElementById(type).load();
+    document.getElementById(type).play();
+}
+
 function flip(card){
 	$(card).css('pointer-events', 'none');
     $(card).toggleClass('flipped');
@@ -27,7 +32,7 @@ function flip(card){
         $('.card').css('pointer-events', 'none');
         if (current.attr('data-name') != $(card).attr('data-name')) {
             setTimeout(function(){
-                document.getElementById('incorrect').play();
+                sound('incorrect');
                 current.toggleClass('flipped');
                 $(card).toggleClass('flipped');
                 current = null;
@@ -35,7 +40,7 @@ function flip(card){
             },500);
         } else {
             setTimeout(function(){
-                document.getElementById('correct').play();                                
+                sound('correct');                                
                 $(card).find('img').css({
                     'box-shadow': '0px 0px 15px 5px rgba(127,255,212,0.75)'
                 });
@@ -48,6 +53,7 @@ function flip(card){
                 
                 point++;
                 if (point == cards.length/2) {
+                    clearInterval(run);
                     win();
                 } else {
                     $('.card').css('pointer-events', 'auto');    
@@ -62,6 +68,10 @@ function startGame(){
     $('.cover').hide();
     $('.dialog').hide();
     
+    document.getElementById('win').load();
+    document.getElementById('lose').load();
+    sound('background');
+
     point = 0;
     run = null;
     current = null;
@@ -75,11 +85,10 @@ function startGame(){
     }
     $('.content').html(html);
     
-    $('.bar').val('90');
+    $('.bar').val('30');
     var remainTime = Number($('.bar').attr('value'));
     run = setInterval(function(){
         remainTime--;
-        console.log(remainTime);
         $('.bar').val(remainTime);
         if (remainTime == 0) {
             clearInterval(run);
@@ -88,20 +97,26 @@ function startGame(){
     }, 1000);
 }
 function lose() {
+    document.getElementById('background').load();
     $('.cover').show();
     $('.message').find('h1').text('Sorry, you lost...');
     $('.message').find('button').text('Play again');    
-    $('.dialog').show();    
+    $('.dialog').fadeIn();
+    sound('lose');
 }
 
 function win() {
-    clearInterval(run);
+    document.getElementById('background').load();
     $('.cover').show();
     $('.message').find('h1').text('Congrat, you win!!!');
     $('.message').find('button').text('Play again');    
-    $('.dialog').show();    
+    $('.dialog').fadeIn();
+    sound('win');
 }
 
-// $(document).ready(function() {
-//     cards = shuffle(cards);    
-// });
+$(function(){
+    document.getElementById('incorrect').volume = 0.5;
+    document.getElementById('correct').volume = 0.5;
+    $('.dialog').hide();
+    $('.dialog').fadeIn();
+})
