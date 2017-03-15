@@ -122,7 +122,7 @@ function restart() {
 }
 
 $(document).ready(function() {
-    if (window.location.href == "file:///C:/Users/Laptop88/Desktop/HTML%20Course/Quiz/result.html") {
+    if (window.location.href == "https://hieudo212.github.io/Quiz/result.html") {
         var message = window.sessionStorage.mess;
         $('.result').find('h1').html(message);
         var score = window.sessionStorage.score;
