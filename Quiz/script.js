@@ -58,6 +58,7 @@ function shuffle(array) {
 function start() {
 	$('.cover').hide();
 	$('.dialog').hide();
+	$('.wrap').css('opacity',1);
 	window.sessionStorage.score = '';
 	pack = shuffle(pack);
 	for (var j=0; j<5; j++) {
