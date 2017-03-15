@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+	font-family: "Courier New", Courier, monospace;
+}
+html {
+    background: url(img/bg1.jpeg) no-repeat center fixed; 
+    background-size: cover;
+}
+h1 {
+	text-transform: uppercase;
+	color: #fff;
+}
+h2 {
+	color: #fff;	
+}
+p {
+	font-size: 16px;
+}
+button {
+	font-size: 16px;
+}
+.wrap {
+	margin: 10% auto;
+	background-color: rgba(245,245,245,0.7);
+	max-width: 840px;
+	border-radius: 10px;
+	padding: 5px;
+	overflow: auto;
+}
+.question , .check {
+	max-width: 100%;
+	overflow: auto;
+	padding: 5px;
+	padding-left: 10px;
+}
+.answer {
+	width: 50%;
+	float: left;
+	padding: 5px;
+}
+.answer button {
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	background-color: rgba(143,188,143,0.7);
+	padding: 5px;
+	padding-left: 10px;
+	text-align: left;
+	transition: all 0.3s linear;
+}
+.answer:hover button {
+	transform: translateY(-3px);
+	background-color: rgba(255,255,255,1);
+}
+
+.mark {
+	width: 30%;
+	float: right;
+	margin-top: 10px;
+}
+.mark img {
+	max-width: 15%;
+	display: block;
+	float: right;
+	margin-right: 20px;
+}
+.mark button {
+	width: 30%;
+	float: right;
+	padding: 5px;
+	margin: 2px;
+	border-radius: 5px;
+}
+
+.point {
+	width: 30%;
+	float: left;
+	margin-top: 10px;
+}
+.point img {
+	max-width: 40px;
+	transition: opacity 0.3s linear;
+}
+
+.cover, .dialog {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+.cover {
+	background-color: #000;
+	opacity: 0.5;
+	z-index: 100;
+}
+.dialog {
+	z-index: 200;
+	background-color: rgba(143,188,143,0.8);
+	text-align: center;
+	border-radius: 10px;
+	margin: 10% auto;
+	padding: 10px;
+	width: 400px;
+	height: 140px;
+}
+#startBtn {
+	background-color: rgba(112,128,144,0.8);
+	border-radius: 5px;
+	padding: 8px;
+	margin-bottom: 15px;
+	transition: all 0.3s ease;
+	color: #fff;
+	font-weight: bold;
+}
+#startBtn:hover {
+	box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.8);
+}
+.result {
+	background-color: rgba(143,188,143,0.8);
+	text-align: center;
+	border-radius: 10px;
+	margin: 10% auto;
+	padding: 10px;
+	width: 400px;
+	transform: scale(0);
+	transition: all 1s linear;
+}

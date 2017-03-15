@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="question">			
+			<p></p>
+		</div>
+		<div class="answer">			
+			<button id='answer0' onclick="press(this)"></button>
+		</div>
+		<div class="answer">			
+			<button id='answer1' onclick="press(this)"></button>
+		</div>
+		<div class="answer">			
+			<button id='answer2' onclick="press(this)"></button>
+		</div>
+		<div class="answer">			
+			<button id='answer3' onclick="press(this)"></button>
+		</div>
+		<div class="check">			
+			<div class="point">
+				<img id='life1' src="img/heart.ico">
+				<img id='life2' src="img/heart.ico">
+				<img id='life3' src="img/heart.ico">
+			</div>
+			<div class="mark">
+				<button class="check" onclick="check(this)">Check</button>
+				<div class="symbol">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="dialog">
+		<h1>Funny Quiz</h1>
+		<button id="startBtn" onclick="start()">Start</button>
+	</div>
+
+	<div class="cover"></div>
+	
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
