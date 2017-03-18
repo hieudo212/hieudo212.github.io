@@ -22,7 +22,7 @@ $(document).ready(function(){
 		$('#year').html(year);
 	}
 
-	if (window.location.href != "file:///C:/Users/Laptop88/Desktop/HTML%20Course/Form/register.html") {
+	if (window.location.href != "https://hieudo212.github.io/Form/register.html") {
 		decode = decodeURIComponent(window.location.search).substr(1);
 		decodeArr = decode.split('&');
 		for (var i=0;i<decodeArr.length;i++) {
