@@ -1,0 +1,215 @@
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: #777;
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+strong {
+	color: #ff0000;
+}
+
+.name h5, .name p {
+	color: #336699;
+	font-weight: bold;
+}
+
+.title-bg {
+    height: 80px;
+    background: url(../img/bg.jpg) no-repeat center; 
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.title-bg h3 {
+	text-transform: uppercase;
+	color: #999999;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 80px;
+    margin: 0px;
+}
+
+/*Header*/
+header {
+	background-color: #336699;
+}
+.logo img {
+	width: 100%;
+}
+.searchBox, .contactInfo {
+	margin: 5% auto;
+}
+.contactInfo p {
+	color: #fff;
+	padding-left: 30%;
+}
+
+/*Nav-bar*/
+@media (min-width: 768px){
+    .navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: auto;
+        float: none;
+        width: 100%;
+    }
+    .navbar-nav>li {
+        display: table-cell;
+        float: none;
+        text-align: center;
+    }
+}
+
+#menu .glyphicon {
+	font-size: 30px;
+}
+
+/*Side Menu*/
+.side-menu {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 60px;
+	z-index: 100;
+	height: 100%;
+	background-color: #f8f8f8;
+}
+.side-menu .glyphicon {
+	font-size: 30px;
+}
+.side-menu li {
+	border-bottom: solid 1px #e7e7e7;
+}
+
+/*Carousel style*/
+.col-item {
+    border: 2px solid #999999;
+    border-radius: 5px;
+    background: #FFF;
+    position: relative;
+}
+.col-item:hover {
+    background-color: rgba(215, 215, 244, 0.5); 
+}
+
+.col-item .photo img {
+    margin: 0 auto;
+    width: 100%;
+}
+.col-item .info {
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 1px;
+}
+
+.col-item .separator {
+    border-top: 1px solid #CC9999;
+}
+.col-item .separator p {
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+.col-item .separator p i {
+    margin-right: 5px;
+}
+
+.controls {
+    margin-top: 25px;
+}
+.controls a {
+	color: #999999;
+}
+
+[data-slide="prev"] {
+    margin-right: 10px;
+}
+
+.col-double .col-item {
+	margin-bottom: 10px;
+}
+
+/*Overlay*/
+.overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #fff;
+	overflow: hidden;
+	height: 100%;
+	transition: all .5s ease;
+	pointer-events: none;
+}
+.overlay p {
+	margin: 3px 10px;
+	font-size: 12px;
+}
+.overlay .name p {
+	font-size: 14px;
+}
+
+/*Slide-in Overlay*/
+.slide-in.overlay {
+	left: 100%;
+	width: 0;
+}
+.slide-in.overlay p {
+	white-space: nowrap;
+}
+.slide-in.overlay .btn-add
+{
+    width: 50%;
+    float: left;
+    border-right: 1px solid #CC9999;
+}
+.col-item:hover .slide-in.overlay {
+  width: 100%;
+  left: 0;
+  opacity: 0.9;
+}
+.slide-in.overlay .info {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.overlay .btn-add {
+	pointer-events: auto;
+}
+
+/*Fade-in Overlay*/
+.photo {
+	position: relative;
+}
+.fade-in.overlay {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+}
+.photo:hover .overlay {
+	opacity: 1;
+}
+
+.video .col-item {
+	padding: 5px;
+}
+.video .news {
+	max-width: 250px;
+	height: 250px;
+}
+.video .owl-item {
+	opacity: 0.5;
+}
+.owl-item.active.center {
+	opacity: 1;
+}
