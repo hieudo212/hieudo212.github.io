@@ -14,10 +14,10 @@
 <body>
 	<header class="container-fluid">
 		<div class="row info">
-			<div class="col-sm-4 col-xs-12">
+			<!-- <div class="col-sm-4 col-xs-12">
 				<a class="logo" href="#"><img src="img/Logo.png" alt="logo"></a>	
-			</div>
-			<div class="col-sm-4 col-xs-12">
+			</div> -->
+			<!-- <div class="col-sm-4 col-xs-12">
 				<div class="input-group searchBox">
 					<input type="text" class="form-control" placeholder="Bạn muốn tìm..." />
 					<span class="input-group-btn">
@@ -26,14 +26,61 @@
 						</button>
 					</span>
 				</div>
+			</div> -->
+			<div class="hotline col-sm-4 col-xs-8 pull-left">
+				<i class="fa fa-mobile-phone"></i> Hotline: 0943271111
 			</div>
-			<div class="col-sm-4 col-xs-12">
-				<div class="contactInfo">
-					<p><i class="fa fa-mobile-phone"></i>Hotline: 09xxxxxxxx</p>
-                	<p><i class="fa fa-map-marker"></i>Thường Tín, Hà Nội</p>	
-				</div>
+			<div class="user col-xs-4 pull-right">
+				<i class="fa fa-user-circle-o"></i><span class="hidden-xs"> Đăng nhập / Đăng ký<span>
 			</div>
 		</div>
+		<nav id=menu class="row navbar navbar-default">
+			<!-- <div class="container-fluid"> -->
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="img/Logo.png" alt="logo"></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-collapse-1">
+					<ul class="nav navbar-nav nav-pills">
+						<li><a href="#"><i class="fa fa-home"></i><p class="hidden-sm">Trang chủ</p></a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								<i class="fa fa-mobile-phone"></i><span class="caret"></span>
+								<p  class="hidden-sm">Điện thoại</p>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">iPhone</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Samsung</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Sony</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">LG</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">HTC</a></li>
+							</ul>
+						</li>
+						<li><a href="#"><span class="glyphicon glyphicon-headphones"></span><p class="hidden-sm">Phụ kiện</p></a></li>
+						<li><a href="#"><i class="fa fa-gift"></i><p class="hidden-sm">Khuyến mại</p></a></li>
+						<li><a href="#"><i class="fa fa-question-circle-o"></i><p class="hidden-sm">Liên hệ</p></a></li>
+						<li><a href="#"><i class="fa fa-share-alt"></i><p class="hidden-sm">Chia sẻ</p></a></li>
+						
+					</ul>
+					<ul class="nav navbar-nav nav-pills navbar-right">
+						<li><a href="#"><i class="fa fa-search"></i></a></li>
+						<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+						<li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			<!-- </div>/.container-fluid -->
+		</nav>
 		<div class="row">
 			<div class="bg-col col-xs-6 col-sm-4 pull-left">
 				<div class="box phone">
@@ -76,19 +123,17 @@
 		
 	</header>
 
-	<nav id=menu class="navbar navbar-default">
+	<!-- <nav id=menu class="navbar navbar-default">
 		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
 			</div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav nav-pills">
 					<li><a href="#"><i class="fa fa-home"></i><p>Trang chủ</p></a></li>
 					<li class="dropdown">
@@ -115,29 +160,14 @@
 					<li><a href="#"><i class="fa fa-user-circle-o"></i><p>Tài khoản</p></a></li>
 					<li><a href="#"><i class="fa fa-shopping-bag"></i><p>Giỏ hàng</p></a></li>
 				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-	</nav>
+			</div>
+		</div>
+	</nav> -->
 
 	<div class="side-menu">
 		<ul class="nav nav-pills nav-stacked">
 			<li><a href="#"><i class="fa fa-home"></i></a></li>
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
-					<i class="fa fa-mobile-phone"></i><span class="caret"></span>
-				</a>
-				<ul class="dropdown-menu">
-					<li><a href="#">iPhone</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">Samsung</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">Sony</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">LG</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">HTC</a></li>
-				</ul>
-			</li>
+			<li><a href="#"><i class="fa fa-mobile-phone"></i></a></li>
 			<li><a href="#"><span class="glyphicon glyphicon-headphones"></span></a></li>
 			<li><a href="#"><i class="fa fa-gift"></i></a></li>
 			<li><a href="#"><i class="fa fa-question-circle-o"></i></a></li>
@@ -148,303 +178,6 @@
 	</div>
 
 <!-- Sản phẩm mới -->
-	<!-- <div class="container">
-		<div class="row">
-			<div class="row title-bg">
-				<div class="col-xs-2">
-					<div class="controls pull-left">
-						<a class="left fa fa-chevron-left btn btn" href="#new-product"
-						data-slide="prev"></a>
-					</div>
-				</div>
-				<div class="col-xs-8">
-					<h3>Sản phẩm mới</h3>
-				</div>
-				<div class="col-xs-2">
-					<div class="controls pull-right">
-						<a class="right fa fa-chevron-right btn" href="#new-product"
-						data-slide="next"></a>
-					</div>
-				</div>
-			</div>
-			<div id="new-product" class="carousel slide" data-ride="carousel">
-				<div class="carousel-inner">
-					<div class="item active">
-						<div class="row">
-							<div class="col-xs-6 col-sm-3">
-								<div class="col-item">
-									<div class="info">
-										<div class="name">
-											<h5>iPhone 7 Plus 32GB</h5>	
-										</div>
-										<div>
-											<strong>25.190.000₫</strong>	
-										</div>
-									</div>
-
-									<div class="photo">
-										<a href="#"><img src="img/iphone7-plus-32GB.png" class="img-responsive"/></a>
-										<div class="fade-in overlay">
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-										</div>
-									</div>
-
-									<div class="info">
-										<div class="separator">
-											<p class="btn-add">
-												<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm hidden-xs">Mua hàng</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-6 col-sm-3">
-								<div class="col-item">
-									<div class="info">
-										<div class="name">
-											<h5>iPhone 7 Plus 32GB</h5>	
-										</div>
-										<div>
-											<strong>25.190.000₫</strong>	
-										</div>
-									</div>
-
-									<div class="photo">
-										<a href="#"><img src="img/iphone7-plus-32GB.png" class="img-responsive"/></a>
-										<div class="fade-in overlay">
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-										</div>
-									</div>
-
-									<div class="info">
-										<div class="separator">
-											<p class="btn-add">
-												<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm hidden-xs">Mua hàng</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-6 col-sm-3">
-								<div class="col-item">
-									<div class="info">
-										<div class="name">
-											<h5>iPhone 7 Plus 32GB</h5>	
-										</div>
-										<div>
-											<strong>25.190.000₫</strong>	
-										</div>
-									</div>
-
-									<div class="photo">
-										<a href="#"><img src="img/iphone7-plus-32GB.png" class="img-responsive"/></a>
-										<div class="fade-in overlay">
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-										</div>
-									</div>
-
-									<div class="info">
-										<div class="separator">
-											<p class="btn-add">
-												<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm hidden-xs">Mua hàng</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-6 col-sm-3">
-								<div class="col-item">
-									<div class="info">
-										<div class="name">
-											<h5>iPhone 7 Plus 32GB</h5>	
-										</div>
-										<div>
-											<strong>25.190.000₫</strong>	
-										</div>
-									</div>
-
-									<div class="photo">
-										<a href="#"><img src="img/iphone7-plus-32GB.png" class="img-responsive"/></a>
-										<div class="fade-in overlay">
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-										</div>
-									</div>
-
-									<div class="info">
-										<div class="separator">
-											<p class="btn-add">
-												<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm hidden-xs">Mua hàng</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>	
-						</div>
-					</div>
-					<div class="item">
-						<div class="row">
-							<div class="col-xs-6 col-sm-3">
-								<div class="col-item">
-									<div class="info">
-										<div class="name">
-											<h5>iPhone 7 Plus 32GB</h5>	
-										</div>
-										<div>
-											<strong>25.190.000₫</strong>	
-										</div>
-									</div>
-
-									<div class="photo">
-										<a href="#"><img src="img/iphone7-plus-32GB.png" class="img-responsive"/></a>
-										<div class="fade-in overlay">
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-										</div>
-									</div>
-
-									<div class="info">
-										<div class="separator">
-											<p class="btn-add">
-												<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm hidden-xs">Mua hàng</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-6 col-sm-3">
-								<div class="col-item">
-									<div class="info">
-										<div class="name">
-											<h5>iPhone 7 Plus 32GB</h5>	
-										</div>
-										<div>
-											<strong>25.190.000₫</strong>	
-										</div>
-									</div>
-
-									<div class="photo">
-										<a href="#"><img src="img/iphone7-plus-32GB.png" class="img-responsive"/></a>
-										<div class="fade-in overlay">
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-										</div>
-									</div>
-
-									<div class="info">
-										<div class="separator">
-											<p class="btn-add">
-												<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm hidden-xs">Mua hàng</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-6 col-sm-3">
-								<div class="col-item">
-									<div class="info">
-										<div class="name">
-											<h5>iPhone 7 Plus 32GB</h5>	
-										</div>
-										<div>
-											<strong>25.190.000₫</strong>	
-										</div>
-									</div>
-
-									<div class="photo">
-										<a href="#"><img src="img/iphone7-plus-32GB.png" class="img-responsive"/></a>
-										<div class="fade-in overlay">
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-										</div>
-									</div>
-
-									<div class="info">
-										<div class="separator">
-											<p class="btn-add">
-												<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm hidden-xs">Mua hàng</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-6 col-sm-3">
-								<div class="col-item">
-									<div class="info">
-										<div class="name">
-											<h5>iPhone 7 Plus 32GB</h5>	
-										</div>
-										<div>
-											<strong>25.190.000₫</strong>	
-										</div>
-									</div>
-
-									<div class="photo">
-										<a href="#"><img src="img/iphone7-plus-32GB.png" class="img-responsive"/></a>
-										<div class="fade-in overlay">
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-										</div>
-									</div>
-
-									<div class="info">
-										<div class="separator">
-											<p class="btn-add">
-												<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm hidden-xs">Mua hàng</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
 	<div class="container">
 		<div class="row">
 			<div class="row title-bg">
@@ -454,19 +187,17 @@
 			</div>
 			<div class="product owl-carousel owl-theme">
 				<div class="col-item">
-					<!-- <a href="#"> -->
-						<div class="photo">
-							<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
+					<div class="photo">
+						<img src="img/iphone7-plus-32gb.png" class="img-responsive" alt="a" />
+					</div>
+					<div class="info">
+						<div class="name">
+							<h5>iPhone 7 Plus 32GB</h5>	
 						</div>
-						<div class="info">
-							<div class="name">
-								<h5>iPhone 7 Plus 32GB</h5>	
-							</div>
-							<div class="price">
-								<strong>25.190.000₫</strong>	
-							</div>
+						<div class="price">
+							<strong>25.190.000₫</strong>	
 						</div>
-					<!-- </a> -->
+					</div>
 					<div class="slide-in overlay">
 						<div class="name">
 							<p>iPhone 7 Plus 128GB</p>	
@@ -491,19 +222,17 @@
 					</div>	
 				</div>
 				<div class="col-item">
-					<!-- <a href="#"> -->
-						<div class="photo">
-							<img src="img/iphone7-256gb.png" class="img-responsive" alt="a" />
+					<div class="photo">
+						<img src="img/iphone7-256gb.png" class="img-responsive" alt="a" />
+					</div>
+					<div class="info">
+						<div class="name">
+							<h5>iPhone 7 Plus 32GB</h5>	
 						</div>
-						<div class="info">
-							<div class="name">
-								<h5>iPhone 7 Plus 32GB</h5>	
-							</div>
-							<div class="price">
-								<strong>25.190.000₫</strong>	
-							</div>
+						<div class="price">
+							<strong>25.190.000₫</strong>	
 						</div>
-					<!-- </a> -->
+					</div>
 					<div class="slide-in overlay">
 						<div class="name">
 							<p>iPhone 7 Plus 128GB</p>	
@@ -528,19 +257,122 @@
 					</div>	
 				</div>
 				<div class="col-item">
-					<!-- <a href="#"> -->
-						<div class="photo">
-							<img src="img/iphone7-128gb.png" class="img-responsive" alt="a" />
+					<div class="photo">
+						<img src="img/iphone7-plus-128gb.png" class="img-responsive" alt="a" />
+					</div>
+					<div class="info">
+						<div class="name">
+							<h5>iPhone 7 Plus 32GB</h5>	
 						</div>
+						<div class="price">
+							<strong>25.190.000₫</strong>	
+						</div>
+					</div>
+					<div class="slide-in overlay">
+						<div class="name">
+							<p>iPhone 7 Plus 128GB</p>	
+						</div>
+						<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
+						<p class="separator">Màn hình: 5.5", Retina HD</p>
+						<p>HĐH: iOS 10</p>
+						<p>CPU: Apple A10 Fusion 4 nhân</p>
+						<p>RAM: 3 GB, ROM: 128 GB</p>
+						<p>Camera: 2x12 MP, Selfie: 7 MP</p>
+						<p>PIN: 2900 mAh, SIM: 1 SIM</p>
 						<div class="info">
-							<div class="name">
-								<h5>iPhone 7 Plus 32GB</h5>	
-							</div>
-							<div class="price">
-								<strong>25.190.000₫</strong>	
+							<div class="separator">
+								<p class="btn-add">
+									<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
+								</p>
+								<p class="btn-details">
+									<i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a>
+								</p>
 							</div>
 						</div>
-					<!-- </a> -->
+					</div>	
+				</div>
+				<div class="col-item">
+					<div class="photo">
+						<img src="img/iphone7-plus-32gb.png" class="img-responsive" alt="a" />
+					</div>
+					<div class="info">
+						<div class="name">
+							<h5>iPhone 7 Plus 32GB</h5>	
+						</div>
+						<div class="price">
+							<strong>25.190.000₫</strong>	
+						</div>
+					</div>
+					<div class="slide-in overlay">
+						<div class="name">
+							<p>iPhone 7 Plus 128GB</p>	
+						</div>
+						<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
+						<p class="separator">Màn hình: 5.5", Retina HD</p>
+						<p>HĐH: iOS 10</p>
+						<p>CPU: Apple A10 Fusion 4 nhân</p>
+						<p>RAM: 3 GB, ROM: 128 GB</p>
+						<p>Camera: 2x12 MP, Selfie: 7 MP</p>
+						<p>PIN: 2900 mAh, SIM: 1 SIM</p>
+						<div class="info">
+							<div class="separator">
+								<p class="btn-add">
+									<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
+								</p>
+								<p class="btn-details">
+									<i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a>
+								</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="col-item">
+					<div class="photo">
+						<img src="img/iphone7-256gb.png" class="img-responsive" alt="a" />
+					</div>
+					<div class="info">
+						<div class="name">
+							<h5>iPhone 7 Plus 32GB</h5>	
+						</div>
+						<div class="price">
+							<strong>25.190.000₫</strong>	
+						</div>
+					</div>
+					<div class="slide-in overlay">
+						<div class="name">
+							<p>iPhone 7 Plus 128GB</p>	
+						</div>
+						<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
+						<p class="separator">Màn hình: 5.5", Retina HD</p>
+						<p>HĐH: iOS 10</p>
+						<p>CPU: Apple A10 Fusion 4 nhân</p>
+						<p>RAM: 3 GB, ROM: 128 GB</p>
+						<p>Camera: 2x12 MP, Selfie: 7 MP</p>
+						<p>PIN: 2900 mAh, SIM: 1 SIM</p>
+						<div class="info">
+							<div class="separator">
+								<p class="btn-add">
+									<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
+								</p>
+								<p class="btn-details">
+									<i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a>
+								</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="col-item">
+					<div class="photo">
+						<img src="img/iphone7-plus-128gb.png" class="img-responsive" alt="a" />
+					</div>
+					<div class="info">
+						<div class="name">
+							<h5>iPhone 7 Plus 32GB</h5>	
+						</div>
+						<div class="price">
+							<strong>25.190.000₫</strong>	
+						</div>
+					</div>
 					<div class="slide-in overlay">
 						<div class="name">
 							<p>iPhone 7 Plus 128GB</p>	
@@ -568,9 +400,8 @@
 		</div>
 	</div>
 
-
-<!-- Slide	 -->
-	<!-- <div id="wowslider-container1">
+	<!-- Slide	 -->
+	<div id="wowslider-container1">
 		<div class="ws_images">
 			<ul>
 				<li><img src="data1/images/slide1.png" alt="slide1" title="slide1" id="wows1_0"/></li>
@@ -591,7 +422,7 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="engine1/wowslider.js"></script>
-	<script type="text/javascript" src="engine1/script.js"></script> -->
+	<script type="text/javascript" src="engine1/script.js"></script>
 				
 <!-- Sản phẩm nổi bật -->
 	<div id="product" class="container">
@@ -602,27 +433,50 @@
 		</div>
 		<div class="row">
 			<div class="col-wrap col-xs-12 col-sm-4 pull-left">
-				<div class="col-item col-title">
-					<div class="tag">
-						<h5>Hot</h5>
-					</div>
+				<div class="col-title">
+					<div class="tag-left"></div>
+					<div class="tag-name-left">Hot!</div>
 					<div class="info">
 						<div class="name">
-							<h5>iPhone 7 Plus 32GB</h5>	
+							<h5>Samsung Galaxy S8</h5>	
 						</div>
-					</div>
-					<div class="icon">
-						<i class="fa fa-heart-o"></i>
-						<i class="fa fa-shopping-cart"></i>
-						<i class="fa fa-list"></i>
-					</div>
-					<img src="img/iphone7-32gb.png" class="img-responsive">
-					<div class="info">
 						<div class="price">
-							<strong>25.190.000₫</strong>	
+							<strong>18.990.000₫</strong>	
 						</div>
 					</div>
-					
+					<div id="s8-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+						<ol class="carousel-indicators">
+							<li class="black" data-target="#s8-carousel" data-slide-to="0" class="active"></li>
+							<li class="gray" data-target="#s8-carousel" data-slide-to="1"></li>
+							<li class="blue" data-target="#s8-carousel" data-slide-to="2"></li>
+							<li class="silver" data-target="#s8-carousel" data-slide-to="3"></li>
+							<li class="gold" data-target="#s8-carousel" data-slide-to="4"></li>
+						</ol>
+
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/S8/s8-black.png" alt="Samsung Galaxy S8 Black">
+							</div>
+							<div class="item">
+								<img src="img/S8/s8-gray.png" alt="Samsung Galaxy S8 Gray">
+							</div>
+							<div class="item">
+								<img src="img/S8/s8-blue.png" alt="Samsung Galaxy S8 Blue">
+							</div>
+							<div class="item">
+								<img src="img/S8/s8-silver.png" alt="Samsung Galaxy S8 Silver">
+							</div>
+							<div class="item">
+								<img src="img/S8/s8-gold.png" alt="Samsung Galaxy S8 Gold">
+							</div>
+						</div>
+					</div>
+					<!-- <img src="img/galaxy-s8.png" class="img-responsive"> -->
+					<div class="icon">
+						<a href="#"><i class="fa fa-heart-o"></i><span class="heart hidden-sm hidden-xs">Yêu thích</span></a>
+						<a href="#"><i class="fa fa-shopping-cart"></i><span class="shop hidden-sm hidden-xs">Mua hàng</span></a>
+						<a href="#"><i class="fa fa-list"></i><span class="details hidden-sm hidden-xs">Chi tiết</span></a>
+					</div>
 				</div>
 				
 			</div>
@@ -637,339 +491,318 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="item active">
-						<!-- <div class="row"> -->
-							<div class="col-xs-6 col-double">
-								<!-- <div class="col-double"> -->
-									<div class="col-item dark">
-										<a href="#">
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-											<div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div class="price">
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p class="btn-details">
-														<i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a>
-													</p>
-												</div>
-											</div>
-										</div>	
+							<div class="col-xs-6">
+								<div class="col-item dark">
+									<div class="photo">
+										<img src="img/htc-ultra.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
 									</div>
-									<div class="col-item light">
-										<a href="#">
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-											<div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div class="price">
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p class="btn-details">
-														<i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a>
-													</p>
-												</div>
-											</div>
-										</div>	
-									</div>	
-								<!-- </div> -->
+									<div class="info">
+										<div class="name">
+											<h5>HTC U Ultra</h5>	
+										</div>
+										<div class="price">
+											<strong>15.990.000₫</strong>	
+										</div>
+									</div>
+									<div class="slide-in-toggle hidden-xs hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+								</div>
 							</div>
-							<div class="col-xs-6 col-double">
-								<!-- <div class="col-double"> -->
-									<div class="col-item light">
-										<a href="#">
-											<!-- <div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div>
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div> -->
-
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p>
-														<strong>25.190.000₫</strong>
-													</p>
-												</div>
-											</div>
-										</div>	
+							<div class="col-xs-6">
+								<div class="col-item light">
+									<div class="photo">
+										<img src="img/iphone7-plus-red.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
 									</div>
-									<div class="col-item dark">
-										<a href="#">
-											<!-- <div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div>
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div> -->
-
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p>
-														<strong>25.190.000₫</strong>
-													</p>
-												</div>
-											</div>
-										</div>	
+									<div class="info">
+										<div class="name">
+											<h5>iPhone 7 Plus Red 128GB</h5>	
+										</div>
+										<div class="price">
+											<strong>25.190.000₫</strong>	
+										</div>
 									</div>
-								<!-- </div> -->
+									<div class="slide-in-toggle hidden-xs hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+									<div class="tag-right new"></div>
+									<div class="tag-name-right">Mới!</div>
+								</div>	
 							</div>
-							
-						<!-- </div> -->
+							<div class="col-xs-6">
+								<div class="col-item light">
+									<div class="photo">
+										<img src="img/xperia-xa1.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
+									</div>
+									<div class="info">
+										<div class="name">
+											<h5>Sony Xpreria XA1</h5>	
+										</div>
+										<div class="price">
+											<strong>6.490.000₫</strong>	
+										</div>
+									</div>
+									<div class="slide-in-toggle hidden-xs hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+									<div class="tag-right"></div>
+									<div class="tag-name-right">Sale!</div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="col-item dark">
+									<div class="photo">
+										<img src="img/xiaomi-mi-mix.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
+									</div>
+									<div class="info">
+										<div class="name">
+											<h5>Xiaomi Mi MIX</h5>	
+										</div>
+										<div class="price">
+											<strong>16.990.000₫</strong>	
+										</div>
+									</div>
+									<div class="slide-in-toggle hidden-xs hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+								</div>
+							</div>
 					</div>
 					<div class="item">
-						<!-- <div class="row"> -->
-							<div class="col-xs-6 col-double">
-								<!-- <div class="col-double"> -->
-									<div class="col-item dark">
-										<a href="#">
-											<!-- <div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div>
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div> -->
-
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p>
-														<strong>25.190.000₫</strong>
-													</p>
-												</div>
-											</div>
-										</div>	
+							<div class="col-xs-6">
+								<div class="col-item dark">
+									<div class="photo">
+										<img src="img/htc-ultra.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
 									</div>
-									<div class="col-item light">
-										<a href="#">
-											<!-- <div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div>
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div> -->
-
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p>
-														<strong>25.190.000₫</strong>
-													</p>
-												</div>
-											</div>
-										</div>	
-									</div>	
-								<!-- </div> -->
+									<div class="info">
+										<div class="name">
+											<h5>HTC U Ultra</h5>	
+										</div>
+										<div class="price">
+											<strong>15.990.000₫</strong>	
+										</div>
+									</div>
+									<div class="slide-in-toggle hidden-xs hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+								</div>
 							</div>
-							<div class="col-xs-6 col-double">
-								<!-- <div class="col-double"> -->
-									<div class="col-item light">
-										<a href="#">
-											<!-- <div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div>
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div> -->
-
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p>
-														<strong>25.190.000₫</strong>
-													</p>
-												</div>
-											</div>
-										</div>	
+							<div class="col-xs-6">
+								<div class="col-item light">
+									<div class="photo">
+										<img src="img/iphone7-plus-red.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
 									</div>
-									<div class="col-item dark">
-										<a href="#">
-											<!-- <div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div>
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div> -->
-
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p>
-														<strong>25.190.000₫</strong>
-													</p>
-												</div>
-											</div>
-										</div>	
+									<div class="info">
+										<div class="name">
+											<h5>iPhone 7 Plus Red 128GB</h5>	
+										</div>
+										<div class="price">
+											<strong>25.190.000₫</strong>	
+										</div>
 									</div>
-								<!-- </div> -->
+									<div class="slide-in-toggle hidden-xs hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+									<div class="tag-right new"></div>
+									<div class="tag-name-right">Mới!</div>
+								</div>	
 							</div>
-						<!-- </div> -->
+							<div class="col-xs-6">
+								<div class="col-item light">
+									<div class="photo">
+										<img src="img/xperia-xa1.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
+									</div>
+									<div class="info">
+										<div class="name">
+											<h5>Sony Xpreria XA1</h5>	
+										</div>
+										<div class="price">
+											<strong>6.490.000₫</strong>	
+										</div>
+									</div>
+									<div class="slide-in-toggle hidden-xs hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+									<div class="tag-right"></div>
+									<div class="tag-name-right">Sale!</div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="col-item dark">
+									<div class="photo">
+										<img src="img/xiaomi-mi-mix.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
+									</div>
+									<div class="info">
+										<div class="name">
+											<h5>Xiaomi Mi MIX</h5>	
+										</div>
+										<div class="price">
+											<strong>16.990.000₫</strong>	
+										</div>
+									</div>
+									<div class="slide-in-toggle hidden-xs hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+								</div>
+							</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-wrap col-xs-12 col-sm-4 pull-right">
-				<div class="col-item col-title">
-					<img src="img/beats.png" class="img-responsive">
+				<div class="col-title">
+					<div class="tag-left"></div>
+					<div class="tag-name-left">Hot!</div>
+					<div class="info">
+						<div class="name">
+							<h5>Monster Beats by Dr. Dre</h5>	
+						</div>
+						<div class="price">
+							<strong>3.990.000₫</strong>	
+						</div>
+					</div>
+					<div id="beats-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+						<ol class="carousel-indicators">
+							<li class="red" data-target="#beats-carousel" data-slide-to="0" class="active"></li>
+							<li class="black" data-target="#beats-carousel" data-slide-to="1"></li>
+							<li class="white" data-target="#beats-carousel" data-slide-to="2"></li>
+							<li class="green" data-target="#beats-carousel" data-slide-to="3"></li>
+						</ol>
+
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/monster-beats-red.png" alt="Monster Beats Red">
+							</div>
+							<div class="item">
+								<img src="img/monster-beats-black.png" alt="Monster Beats Black">
+							</div>
+							<div class="item">
+								<img src="img/monster-beats-white.png" alt="Monster Beats White">
+							</div>
+							<div class="item">
+								<img src="img/monster-beats-green.jpg" alt="Monster Beats Green">
+							</div>
+						</div>
+					</div>
+					<!-- <img src="img/galaxy-s8.png" class="img-responsive"> -->
+					<div class="icon">
+						<a href="#"><i class="fa fa-heart-o"></i><span class="heart hidden-sm hidden-xs">Yêu thích</span></a>
+						<a href="#"><i class="fa fa-shopping-cart"></i><span class="shop hidden-sm hidden-xs">Mua hàng</span></a>
+						<a href="#"><i class="fa fa-list"></i><span class="details hidden-sm hidden-xs">Chi tiết</span></a>
+					</div>
 				</div>
 			</div>
 			<div id="accessory-slide" class="carousel slide col-xs-12 col-sm-8 pull-left" data-ride="carousel" data-interval="">
@@ -983,1297 +816,288 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="item active">
-						<!-- <div class="row"> -->
-							<div class="col-xs-6 col-double">
-								<!-- <div class="col-double"> -->
-									<div class="col-item light">
-										<a href="#">
-											<!-- <div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div>
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div> -->
-
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p>
-														<strong>25.190.000₫</strong>
-													</p>
-												</div>
-											</div>
-										</div>	
+							<div class="col-xs-6">
+								<div class="col-item light">
+									<div class="photo">
+										<img src="img/xperia-xa1.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
 									</div>
-									<div class="col-item dark">
-										<a href="#">
-											<!-- <div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div>
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div> -->
-
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p>
-														<strong>25.190.000₫</strong>
-													</p>
-												</div>
-											</div>
-										</div>	
+									<div class="info">
+										<div class="name">
+											<h5>Sony Xpreria XA1</h5>	
+										</div>
+										<div class="price">
+											<strong>6.490.000₫</strong>	
+										</div>
 									</div>
-								<!-- </div> -->
+									<div class="slide-in-toggle hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+									<div class="tag-right"></div>
+									<div class="tag-name-right">Sale!</div>
+								</div>
 							</div>
-							<div class="col-xs-6 col-double">
-								<!-- <div class="col-double"> -->
-									<div class="col-item dark">
-										<a href="#">
-											<!-- <div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div>
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div> -->
-
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p>
-														<strong>25.190.000₫</strong>
-													</p>
-												</div>
-											</div>
-										</div>	
+							<div class="col-xs-6">
+								<div class="col-item dark">
+									<div class="photo">
+										<img src="img/xperia-xa1.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
 									</div>
-									<div class="col-item light">
-										<a href="#">
-											<!-- <div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div>
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div> -->
-
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p>
-														<strong>25.190.000₫</strong>
-													</p>
-												</div>
-											</div>
-										</div>	
-									</div>	
-								<!-- </div> -->
+									<div class="info">
+										<div class="name">
+											<h5>Sony Xpreria XA1</h5>	
+										</div>
+										<div class="price">
+											<strong>6.490.000₫</strong>	
+										</div>
+									</div>
+									<div class="slide-in-toggle hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+									<div class="tag-right new"></div>
+									<div class="tag-name-right">Mới!</div>	
+								</div>
 							</div>
-							
-							
-						<!-- </div> -->
+							<div class="col-xs-6">
+								<div class="col-item dark">
+									<div class="photo">
+										<img src="img/xperia-xa1.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
+									</div>
+									<div class="info">
+										<div class="name">
+											<h5>Sony Xpreria XA1</h5>	
+										</div>
+										<div class="price">
+											<strong>6.490.000₫</strong>	
+										</div>
+									</div>
+									<div class="slide-in-toggle hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+									<div class="tag-right new"></div>
+									<div class="tag-name-right">Mới!</div>	
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="col-item light">
+									<div class="photo">
+										<img src="img/xperia-xa1.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
+									</div>
+									<div class="info">
+										<div class="name">
+											<h5>Sony Xpreria XA1</h5>	
+										</div>
+										<div class="price">
+											<strong>6.490.000₫</strong>	
+										</div>
+									</div>
+									<div class="slide-in-toggle hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+									<div class="tag-right new"></div>
+									<div class="tag-name-right">Mới!</div>
+								</div>	
+							</div>
 					</div>
 					<div class="item">
-						<!-- <div class="row"> -->
-							<div class="col-xs-6 col-double">
-								<!-- <div class="col-double"> -->
-									<div class="col-item light">
-										<a href="#">
-											<!-- <div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div>
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div> -->
-
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p>
-														<strong>25.190.000₫</strong>
-													</p>
-												</div>
-											</div>
-										</div>	
+							<div class="col-xs-6">
+								<div class="col-item light">
+									<div class="photo">
+										<img src="img/xperia-xa1.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
 									</div>
-									<div class="col-item dark">
-										<a href="#">
-											<!-- <div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div>
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div> -->
-
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p>
-														<strong>25.190.000₫</strong>
-													</p>
-												</div>
-											</div>
-										</div>	
+									<div class="info">
+										<div class="name">
+											<h5>Sony Xpreria XA1</h5>	
+										</div>
+										<div class="price">
+											<strong>6.490.000₫</strong>	
+										</div>
 									</div>
-								<!-- </div> -->
+									<div class="slide-in-toggle hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+									<div class="tag-right"></div>
+									<div class="tag-name-right">Sale!</div>
+								</div>
 							</div>
-							<div class="col-xs-6 col-double">
-								<!-- <div class="col-double"> -->
-									<div class="col-item dark">
-										<a href="#">
-											<!-- <div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div>
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div> -->
-
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p>
-														<strong>25.190.000₫</strong>
-													</p>
-												</div>
-											</div>
-										</div>	
+							<div class="col-xs-6">
+								<div class="col-item dark">
+									<div class="photo">
+										<img src="img/xperia-xa1.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
 									</div>
-									<div class="col-item light">
-										<a href="#">
-											<!-- <div class="info">
-												<div class="name">
-													<h5>iPhone 7 Plus 32GB</h5>	
-												</div>
-												<div>
-													<strong>25.190.000₫</strong>	
-												</div>
-											</div> -->
-
-											<div class="photo">
-												<img src="img/iphone7-32gb.png" class="img-responsive" alt="a" />
-											</div>
-										</a>
-										<div class="slide-in overlay">
-											<div class="name">
-												<p>iPhone 7 Plus 128GB</p>	
-											</div>
-											<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-											<p class="separator">Màn hình: 5.5", Retina HD</p>
-											<p>HĐH: iOS 10</p>
-											<p>CPU: Apple A10 Fusion 4 nhân</p>
-											<p>RAM: 3 GB, ROM: 128 GB</p>
-											<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-											<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-											<div class="info">
-												<div class="separator">
-													<p class="btn-add">
-														<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-													</p>
-													<p>
-														<strong>25.190.000₫</strong>
-													</p>
-												</div>
-											</div>
-										</div>	
-									</div>	
-								<!-- </div> -->
+									<div class="info">
+										<div class="name">
+											<h5>Sony Xpreria XA1</h5>	
+										</div>
+										<div class="price">
+											<strong>6.490.000₫</strong>	
+										</div>
+									</div>
+									<div class="slide-in-toggle hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+									<div class="tag-right new"></div>
+									<div class="tag-name-right">Mới!</div>	
+								</div>
 							</div>
-							
-						<!-- </div> -->
+							<div class="col-xs-6">
+								<div class="col-item dark">
+									<div class="photo">
+										<img src="img/xperia-xa1.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
+									</div>
+									<div class="info">
+										<div class="name">
+											<h5>Sony Xpreria XA1</h5>	
+										</div>
+										<div class="price">
+											<strong>6.490.000₫</strong>	
+										</div>
+									</div>
+									<div class="slide-in-toggle hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+									<div class="tag-right new"></div>
+									<div class="tag-name-right">Mới!</div>	
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="col-item light">
+									<div class="photo">
+										<img src="img/xperia-xa1.png" class="img-responsive" alt="a" />
+										<div class="vertical icon">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#"><i class="fa fa-list"></i></a>
+										</div>
+									</div>
+									<div class="info">
+										<div class="name">
+											<h5>Sony Xpreria XA1</h5>	
+										</div>
+										<div class="price">
+											<strong>6.490.000₫</strong>	
+										</div>
+									</div>
+									<div class="slide-in-toggle hidden-xs">
+										<i class="fa fa-angle-double-right"></i>
+									</div>
+									<div class="slide-in overlay">
+										<p><b>Trả góp 0% HOẶC Tặng PMH 500,000đ</b></p>
+										<p>Màn hình: 5.0" không viền, HD</p>
+										<p>HĐH: Android 7.0</p>
+										<p>CPU: Helio P20, 8 nhân</p>
+										<p>RAM: 3GB; ROM: 32GB</p>
+										<p>Camera: 23MP, Selfie: 8MP</p>
+										<p>PIN: 2300 mAh, SIM: 2 SIM</p>
+									</div>
+									<div class="tag-right new"></div>
+									<div class="tag-name-right">Mới!</div>
+								</div>	
+							</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>	
 
-<!-- Điện thoại	 -->
-	<!-- <div class="container">
-		<div class="row">
-			<div class="row title-bg">
-				<div class="col-xs-12">
-					<h3>Điện thoại</h3>
-				</div>
-			</div>
-			<div class="product owl-carousel owl-theme">
-				<div class="col-double">
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>	
-				</div>
-				<div class="col-double">
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>	
-				</div>
-				<div class="col-double">
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>	
-				</div>
-				<div class="col-double">
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>	
-				</div>
-				<div class="col-double">
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>	
-				</div>
-				<div class="col-double">
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>	
-				</div>
-				<div class="col-double">
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>	
-				</div>
-				<div class="col-double">
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>
-					<div class="col-item">
-						<a href="#">
-							<div class="info">
-								<div class="name">
-									<h5>iPhone 7 Plus 32GB</h5>	
-								</div>
-								<div>
-									<strong>25.190.000₫</strong>	
-								</div>
-							</div>
-
-							<div class="photo">
-								<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-							</div>
-						</a>
-						<div class="slide-in overlay">
-							<div class="name">
-								<p>iPhone 7 Plus 128GB</p>	
-							</div>
-							<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-							<p class="separator">Màn hình: 5.5", Retina HD</p>
-							<p>HĐH: iOS 10</p>
-							<p>CPU: Apple A10 Fusion 4 nhân</p>
-							<p>RAM: 3 GB, ROM: 128 GB</p>
-							<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-							<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-							<div class="info">
-								<div class="separator">
-									<p class="btn-add">
-										<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-									</p>
-									<p>
-										<strong>25.190.000₫</strong>
-									</p>
-								</div>
-							</div>
-						</div>	
-					</div>	
-				</div>
-			</div>
-		</div>
-	</div> -->
-
-<!-- Phụ kiện -->
-	<!-- <div class="container">
-		<div class="row">
-			<div class="row title-bg">
-				<div class="col-xs-12">
-					<h3>Phụ kiện</h3>
-				</div>
-			</div>
-			<div class="product owl-carousel owl-theme">
-				<div class="col-item">
-					<a href="#">
-						<div class="info">
-							<div class="name">
-								<h5>iPhone 7 Plus 32GB</h5>	
-							</div>
-							<div>
-								<strong>25.190.000₫</strong>	
-							</div>
-						</div>
-
-						<div class="photo">
-							<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-						</div>
-					</a>
-					<div class="slide-in overlay">
-						<div class="name">
-							<p>iPhone 7 Plus 128GB</p>	
-						</div>
-						<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-						<p class="separator">Màn hình: 5.5", Retina HD</p>
-						<p>HĐH: iOS 10</p>
-						<p>CPU: Apple A10 Fusion 4 nhân</p>
-						<p>RAM: 3 GB, ROM: 128 GB</p>
-						<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-						<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-						<div class="info">
-							<div class="separator">
-								<p class="btn-add">
-									<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-								</p>
-								<p>
-									<strong>25.190.000₫</strong>
-								</p>
-							</div>
-						</div>
-					</div>	
-				</div>
-				<div class="col-item">
-					<a href="#">
-						<div class="info">
-							<div class="name">
-								<h5>iPhone 7 Plus 32GB</h5>	
-							</div>
-							<div>
-								<strong>25.190.000₫</strong>	
-							</div>
-						</div>
-
-						<div class="photo">
-							<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-						</div>
-					</a>
-					<div class="slide-in overlay">
-						<div class="name">
-							<p>iPhone 7 Plus 128GB</p>	
-						</div>
-						<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-						<p class="separator">Màn hình: 5.5", Retina HD</p>
-						<p>HĐH: iOS 10</p>
-						<p>CPU: Apple A10 Fusion 4 nhân</p>
-						<p>RAM: 3 GB, ROM: 128 GB</p>
-						<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-						<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-						<div class="info">
-							<div class="separator">
-								<p class="btn-add">
-									<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-								</p>
-								<p>
-									<strong>25.190.000₫</strong>
-								</p>
-							</div>
-						</div>
-					</div>	
-				</div>	
-				<div class="col-item">
-					<a href="#">
-						<div class="info">
-							<div class="name">
-								<h5>iPhone 7 Plus 32GB</h5>	
-							</div>
-							<div>
-								<strong>25.190.000₫</strong>	
-							</div>
-						</div>
-
-						<div class="photo">
-							<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-						</div>
-					</a>
-					<div class="slide-in overlay">
-						<div class="name">
-							<p>iPhone 7 Plus 128GB</p>	
-						</div>
-						<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-						<p class="separator">Màn hình: 5.5", Retina HD</p>
-						<p>HĐH: iOS 10</p>
-						<p>CPU: Apple A10 Fusion 4 nhân</p>
-						<p>RAM: 3 GB, ROM: 128 GB</p>
-						<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-						<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-						<div class="info">
-							<div class="separator">
-								<p class="btn-add">
-									<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-								</p>
-								<p>
-									<strong>25.190.000₫</strong>
-								</p>
-							</div>
-						</div>
-					</div>	
-				</div>
-				<div class="col-item">
-					<a href="#">
-						<div class="info">
-							<div class="name">
-								<h5>iPhone 7 Plus 32GB</h5>	
-							</div>
-							<div>
-								<strong>25.190.000₫</strong>	
-							</div>
-						</div>
-
-						<div class="photo">
-							<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-						</div>
-					</a>
-					<div class="slide-in overlay">
-						<div class="name">
-							<p>iPhone 7 Plus 128GB</p>	
-						</div>
-						<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-						<p class="separator">Màn hình: 5.5", Retina HD</p>
-						<p>HĐH: iOS 10</p>
-						<p>CPU: Apple A10 Fusion 4 nhân</p>
-						<p>RAM: 3 GB, ROM: 128 GB</p>
-						<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-						<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-						<div class="info">
-							<div class="separator">
-								<p class="btn-add">
-									<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-								</p>
-								<p>
-									<strong>25.190.000₫</strong>
-								</p>
-							</div>
-						</div>
-					</div>	
-				</div>
-				<div class="col-item">
-					<a href="#">
-						<div class="info">
-							<div class="name">
-								<h5>iPhone 7 Plus 32GB</h5>	
-							</div>
-							<div>
-								<strong>25.190.000₫</strong>	
-							</div>
-						</div>
-
-						<div class="photo">
-							<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-						</div>
-					</a>
-					<div class="slide-in overlay">
-						<div class="name">
-							<p>iPhone 7 Plus 128GB</p>	
-						</div>
-						<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-						<p class="separator">Màn hình: 5.5", Retina HD</p>
-						<p>HĐH: iOS 10</p>
-						<p>CPU: Apple A10 Fusion 4 nhân</p>
-						<p>RAM: 3 GB, ROM: 128 GB</p>
-						<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-						<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-						<div class="info">
-							<div class="separator">
-								<p class="btn-add">
-									<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-								</p>
-								<p>
-									<strong>25.190.000₫</strong>
-								</p>
-							</div>
-						</div>
-					</div>	
-				</div>	
-				<div class="col-item">
-					<a href="#">
-						<div class="info">
-							<div class="name">
-								<h5>iPhone 7 Plus 32GB</h5>	
-							</div>
-							<div>
-								<strong>25.190.000₫</strong>	
-							</div>
-						</div>
-
-						<div class="photo">
-							<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-						</div>
-					</a>
-					<div class="slide-in overlay">
-						<div class="name">
-							<p>iPhone 7 Plus 128GB</p>	
-						</div>
-						<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-						<p class="separator">Màn hình: 5.5", Retina HD</p>
-						<p>HĐH: iOS 10</p>
-						<p>CPU: Apple A10 Fusion 4 nhân</p>
-						<p>RAM: 3 GB, ROM: 128 GB</p>
-						<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-						<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-						<div class="info">
-							<div class="separator">
-								<p class="btn-add">
-									<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-								</p>
-								<p>
-									<strong>25.190.000₫</strong>
-								</p>
-							</div>
-						</div>
-					</div>	
-				</div>
-				<div class="col-item">
-					<a href="#">
-						<div class="info">
-							<div class="name">
-								<h5>iPhone 7 Plus 32GB</h5>	
-							</div>
-							<div>
-								<strong>25.190.000₫</strong>	
-							</div>
-						</div>
-
-						<div class="photo">
-							<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-						</div>
-					</a>
-					<div class="slide-in overlay">
-						<div class="name">
-							<p>iPhone 7 Plus 128GB</p>	
-						</div>
-						<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-						<p class="separator">Màn hình: 5.5", Retina HD</p>
-						<p>HĐH: iOS 10</p>
-						<p>CPU: Apple A10 Fusion 4 nhân</p>
-						<p>RAM: 3 GB, ROM: 128 GB</p>
-						<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-						<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-						<div class="info">
-							<div class="separator">
-								<p class="btn-add">
-									<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-								</p>
-								<p>
-									<strong>25.190.000₫</strong>
-								</p>
-							</div>
-						</div>
-					</div>	
-				</div>
-				<div class="col-item">
-					<a href="#">
-						<div class="info">
-							<div class="name">
-								<h5>iPhone 7 Plus 32GB</h5>	
-							</div>
-							<div>
-								<strong>25.190.000₫</strong>	
-							</div>
-						</div>
-
-						<div class="photo">
-							<img src="img/iphone7-plus-128gb-info.png" class="img-responsive" alt="a" />
-						</div>
-					</a>
-					<div class="slide-in overlay">
-						<div class="name">
-							<p>iPhone 7 Plus 128GB</p>	
-						</div>
-						<p><b>Tặng PMH 1,5 triệu HOẶC Trả góp 0%</b></p>
-						<p class="separator">Màn hình: 5.5", Retina HD</p>
-						<p>HĐH: iOS 10</p>
-						<p>CPU: Apple A10 Fusion 4 nhân</p>
-						<p>RAM: 3 GB, ROM: 128 GB</p>
-						<p>Camera: 2x12 MP, Selfie: 7 MP</p>
-						<p>PIN: 2900 mAh, SIM: 1 SIM</p>
-						<div class="info">
-							<div class="separator">
-								<p class="btn-add">
-									<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Mua hàng</a>
-								</p>
-								<p>
-									<strong>25.190.000₫</strong>
-								</p>
-							</div>
-						</div>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</div> -->	
-
 <!-- Góc chia sẻ -->
-	<div class="container">
+	<!-- <div class="container">
 		<div class="row">
 			<div class="row title-bg">
 				<div class="col-xs-12">
@@ -2281,11 +1105,6 @@
 				</div>
 			</div>
 			<div class="video owl-carousel owl-theme">
-				<!-- <div class="col-item">
-					<a href="#">
-						<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FPCMag%2Fvideos%2Fvb.15551698395%2F10154471044063396%2F%3Ftype%3D3&show_text=0&width=560" width="320" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-					</a>
-				</div> -->
 				<div class="col-item">
 					<a href="#">
 						<iframe width="320" height="180" src="https://www.youtube.com/embed/6PfekGWBB50" frameborder="0" allowfullscreen></iframe>
@@ -2359,9 +1178,70 @@
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div> -->	
+	<div class="container">
+		<div class="row">
+			<div class="row title-bg">
+				<div class="col-xs-12">
+					<h3>Góc chia sẻ</h3>
+				</div>
+			</div>
+			<div class="share owl-carousel owl-theme">
+				<div class="col-item" data-merge="2">
+				<div class="video embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6PfekGWBB50" frameborder="0" allowfullscreen></iframe>
+				</div>
+				</div>
+				<!-- <div class="col-item" data-merge="1">
+					<a href="#">
+						<img src="img/bo-doi-smartphone-6-gb-5_1068x616-300x200.jpg"/>
+						<div class="info">
+							<div class="name">
+								<h5>Smartphone RAM 6GB đầu tiên của Samsung chuẩn bị về Việt Nam</h5>	
+							</div>
+						</div>
+					</a>
+				</div> -->
+				<div class="col-item" data-merge="2">
+				<div class="video embed-responsive embed-responsive-16by9" data-merge="2">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lMCwN1k-Vd8" frameborder="0" allowfullscreen></iframe>
+				</div>
+				</div>
+				<div class="col-item" data-merge="2">
+				<div class="video embed-responsive embed-responsive-16by9" data-merge="2">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eYmSpM6w15Q" frameborder="0" allowfullscreen></iframe>
+				</div>
+				</div>
+				<div class="col-item" data-merge="1">
+					<a href="#">
+						<img src="img/iphone-7-red-0_800x450.jpg"/>
+						<div class="info">
+							<div class="name">
+								<h5>Thú vị với bộ ảnh iPhone 7 Plus Red đặt cạnh những vật dụng quen thuộc</h5>	
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- <div class="col-item" data-merge="1">
+					<a href="#">
+						<img src="img/iphone7-256gb-resize.png"/>
+						<div class="info">
+							<div class="name">
+								<h5>Album ảnh</h5>	
+							</div>
+						</div>
+					</a>
+				</div> -->
+				<div class="col-item" data-merge="2">
+				<div class="video embed-responsive embed-responsive-16by9" data-merge="2">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DYW9LVURPcU" frameborder="0" allowfullscreen></iframe>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-
+	
 
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script src="owlcarousel/owl.carousel.min.js"></script>

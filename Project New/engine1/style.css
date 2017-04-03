@@ -294,9 +294,9 @@
     margin-top: 0.5em;
 	font-size: 0.542em;
 }#wowslider-container1 .ws_images > ul{
-	animation: wsBasic 30s infinite;
-	-moz-animation: wsBasic 30s infinite;
-	-webkit-animation: wsBasic 30s infinite;
+	animation: wsBasic 25s infinite;
+	-moz-animation: wsBasic 25s infinite;
+	-webkit-animation: wsBasic 25s infinite;
 }
 @keyframes wsBasic{0%{left:-0%} 10%{left:-0%} 20%{left:-100%} 30%{left:-100%} 40%{left:-200%} 50%{left:-200%} 60%{left:-300%} 70%{left:-300%} 80%{left:-400%} 90%{left:-400%} }
 @-moz-keyframes wsBasic{0%{left:-0%} 10%{left:-0%} 20%{left:-100%} 30%{left:-100%} 40%{left:-200%} 50%{left:-200%} 60%{left:-300%} 70%{left:-300%} 80%{left:-400%} 90%{left:-400%} }

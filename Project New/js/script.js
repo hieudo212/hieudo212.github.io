@@ -1,5 +1,5 @@
 var startY;
-var colHeight;
+var colHeight, itemHeight;
 
 $(document).ready(function(){
     $(".product").owlCarousel({
@@ -22,28 +22,28 @@ $(document).ready(function(){
             }
         }
     });
-    $(".video").owlCarousel({
+    $(".share").owlCarousel({
         loop:true,
         margin:10,
         center:true,
         nav:true,
-        autoWidth: true,
-        // merge:true,
-        // responsiveClass:true,
-        // responsive:{
-        //     0:{
-        //         items:1,
-        //     },
-        //     400:{
-        //         items:2,
-        //     },
-        //     992:{
-        //         items:3,
-        //     },
-        //     1200:{
-        //         items:4,  
-        //     }
-        // }
+        // autoWidth: true,
+        merge:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            400:{
+                items:2,
+            },
+            992:{
+                items:3,
+            },
+            1200:{
+                items:4,  
+            }
+        }
     });    
     $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
     $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
@@ -89,12 +89,14 @@ $(document).ready(function(){
 });
 
 function setHeight(){
-    colHeight = $('#phone-slide .col-double').height();
+    itemHeight = $('#phone-slide .light').height();
+    $('#phone-slide .dark').height(itemHeight);
+    colHeight = $('#phone-slide .carousel-inner').height();
     $('.col-title').height(colHeight);
 }
 
 function checkY(){
-    startY = $('header').position().top + $('header').outerHeight() + $('#menu').outerHeight();
+    startY = $('header').position().top + $('header').outerHeight();
     if( $(window).scrollTop() > startY ){
         if (window.innerWidth > 1310) {
             $('#menu').removeClass('navbar-fixed-top');
