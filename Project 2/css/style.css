@@ -1,0 +1,239 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Arsenal', sans-serif;
+}
+body {
+	height: 3000px;
+}
+.menu {
+	/*position: relative;*/
+}
+a, a:hover {
+	text-decoration: none;
+}
+.navbar a {
+	color: #000;
+}
+.navbar {
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	margin-bottom: 0;
+}
+.collapsing .navbar-nav, .in .navbar-nav{
+	margin: 0 -15px;
+	width: 150px;
+	background: #f8f8f8;
+}
+.collapsing.navbar-collapse, .in.navbar-collapse {
+	position: fixed;
+	top: 80px;
+	left: 0;
+}
+.menu .navbar-collapse {
+	width: 100%;
+	margin: auto;
+}
+.navbar .logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 33.33%;
+	margin: auto;
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.navbar .logo {
+		width: 14%;
+	}
+}
+.collapse .nav {
+	width: 42%;
+	display: flex;
+	justify-content: space-around;
+}
+.collapse .navbar-left {
+	justify-content: flex-end;
+}
+.collapse .navbar-right {
+	justify-content: flex-start;
+}
+.navbar-right {
+	margin-right: 0;
+}
+.collapse.in .nav {
+	display: block;
+	width: 150px;
+}
+.search, .cart-box {
+	white-space: nowrap;
+	padding: 10px;
+}
+
+.menu {
+	min-height: 50px;
+}
+.navbar .fa {
+	font-size: 20px;
+}
+.cart-box .fa {
+	margin: 8px;
+}
+.nav>li>a {
+	padding: 15px 8px;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+@media (min-width: 990px) {
+	.nav>li>a {
+		padding: 15px 20px;
+		font-size: 16px;
+	}
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #000;
+}
+.banner {
+	min-height: 100vh;
+	background: url(../img/banner-bg.jpg) center no-repeat;
+	background-size: cover;
+}
+/*.banner img {
+	max-width: 100%;
+}*/
+.logo img {
+	max-width: 100px;
+	display: inline-block;
+	margin: 10px 0;
+}
+@media (max-width: 990px) {
+	.logo img {
+		max-width: 90px;
+	}
+}
+.box {
+	margin: auto;
+	margin-top: 20vh;
+	width: 50%;
+	border-radius: 50%;
+	position: relative;
+	opacity: 0;
+	transition: all 1.2s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+.box::before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+.content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255,255,255,0.7);
+	padding: 25%;
+	border-radius: 50%;
+	transition: all 0.5s ease;
+	backface-visibility: hidden;
+}
+.content.back {
+	transform: rotateY(180deg);
+	padding: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.box:hover .front {
+	transform: rotateY(180deg);
+}
+.box:hover .back {
+	transform: rotateY(0deg);
+}
+.box-col {
+	padding: 0; 
+}
+.box-title {
+	margin: 5% auto;
+	width: 60%;
+	border-top: double 5px;
+	border-bottom: double 5px;
+	text-align: center;
+	opacity: 0;
+	transition: all 0.5s ease-out 1s;
+}
+.box-title h4 {
+	font-weight: bold;
+}
+.box-title.product {
+	transform: translateX(-300px);
+}
+.box-title.project {
+	transform: translateX(300px);
+}
+.box.product {
+	transform: translateX(66vw);
+	z-index: 5;
+}
+.box.project {
+	transform: translateX(-66vw);
+	z-index: 5;
+}
+.slogan {
+	width: 90%;
+	margin: auto;
+	margin-top: 22vh;
+	text-align: center;
+}
+.slogan h1 {
+	font-size: 96px;
+	font-family: 'Cantata One', serif;
+	transform: translateY(50vh);
+	opacity: 0;
+	transition: all 0.8s ease-out 0.5s;
+}
+.slogan h3 {
+	width: 0;
+	white-space: nowrap;
+	opacity: 0;
+	margin: auto;
+}
+.slogan img {
+	max-width: 40%;
+}
+.slogan a {
+	margin-top: 2vh;
+	display: inline-block;
+	height: 48px;
+	width: 48px;
+	line-height: 48px;
+	background-color: rgba(69,69,69,0.1);
+	border-radius: 50%;
+	text-align: center;
+	opacity: 0;
+	transform: translateY(-50vh);
+	transition: all 0.8s ease-out 0.5s;
+}
+.about {
+	height: 300px;
+	border-bottom: solid 1px;
+}
+.count {
+	font-size: 56px;
+	text-align: center;
+	line-height: 1.2;
+}
+@media (min-width: 990px) {
+	.count {
+		font-size: 96px;
+	}
+}
+.back h4 {
+	margin-top: 0;
+	text-align: center;
+	font-weight: bold;
+}
