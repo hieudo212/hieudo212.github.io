@@ -22,7 +22,32 @@ $(document).ready(function(){
             });
         }); 
     });
-        
+
+    // Solution 1
+    // $('.even-item').each(function () {
+    //     $(this).hover(
+    //         function () {
+    //             $(this).css({'max-width':'66.67%','margin':'0'})
+    //             $(this).prev().css('margin',0);
+    //         }, function () {
+    //             $(this).css({'max-width':'33.33%','margin':'0 8.33%'})
+    //             $(this).prev().css('margin','0 8.33%');
+    //         }
+    //     );
+    // });
+
+    // $('.odd-item').each(function () {
+    //     $(this).hover(
+    //         function () {
+    //             $(this).css({'max-width':'66.67%','margin':'0'})
+    //             $(this).next().css('margin',0);
+    //         }, function () {
+    //             $(this).css({'max-width':'33.33%','margin':'0 8.33%'})
+    //             $(this).next().css('margin','0 8.33%');
+    //         }
+    //     );
+    // });
+
 });
 
 function checkY(){
