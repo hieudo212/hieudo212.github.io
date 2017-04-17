@@ -24,31 +24,44 @@ $(document).ready(function(){
     });
 
     // Solution 1
-    // $('.even-item').each(function () {
-    //     $(this).hover(
-    //         function () {
-    //             $(this).css({'max-width':'66.67%','margin':'0'})
-    //             $(this).prev().css('margin',0);
-    //         }, function () {
-    //             $(this).css({'max-width':'33.33%','margin':'0 8.33%'})
-    //             $(this).prev().css('margin','0 8.33%');
-    //         }
-    //     );
-    // });
+    projectResponsive();
 
-    // $('.odd-item').each(function () {
-    //     $(this).hover(
-    //         function () {
-    //             $(this).css({'max-width':'66.67%','margin':'0'})
-    //             $(this).next().css('margin',0);
-    //         }, function () {
-    //             $(this).css({'max-width':'33.33%','margin':'0 8.33%'})
-    //             $(this).next().css('margin','0 8.33%');
-    //         }
-    //     );
-    // });
+    $(window).resize(function(){
+        projectResponsive();
+    });
 
 });
+
+function projectResponsive() {
+    if (window.innerWidth >= 768 && window.innerWidth <=991) {
+        $('.project-container:nth-child(even)').each(function () {
+            $(this).hover(
+                function () {
+                    $(this).css('width','66.67%');
+                    $(this).prev().css('width','33.33%');
+                }, function () {
+                    $(this).css('width','50%');
+                    $(this).prev().css('width','50%');
+                }
+            );
+        });
+
+        $('.project-container:nth-child(odd)').each(function () {
+            $(this).hover(
+                function () {
+                    $(this).css('width','66.67%');
+                    $(this).next().css('width','33.33%');
+                }, function () {
+                    $(this).css('width','50%');
+                    $(this).next().css('width','50%');
+                }
+            );
+        });
+    } else {
+        $('.project-container').removeAttr('style');
+        $('.project-container').off();
+    }
+}
 
 function checkY(){
     if( $(window).scrollTop() > 0 ){

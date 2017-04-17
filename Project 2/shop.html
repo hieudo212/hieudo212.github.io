@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sản phẩm</title>
+	<link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="search">
+				<i class="fa fa-search"></i><span class="hidden-xs"> Tìm kiếm</span>
+			</a>
+			<div class="container">
+				<div class="menu row">
+					<div class="collapse navbar-collapse" id="menu-collapse">
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="#">Trang chủ</a></li>
+							<li><a href="#">Sản phẩm</a></li>
+							<li><a href="#">Dự án</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Về Min</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Liên hệ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="cart-box">
+				<a href="#">
+					<i class="fa fa-heart-o"></i>
+				</a>
+				<a href="#">
+					<i class="fa fa-shopping-cart"></i>
+				</a>
+			</div>
+			<a class="logo" href="#"><img src="img/logo-min.png"></a>
+		</nav>
+	</header>
+	<div class="container-fluid page-heading shop-heading">
+		<div class="heading-content">
+			<h1>Sản phẩm</h1>
+			<p>Mỗi món đồ là một câu chuyện nhỏ. MIN cùng bạn viết nên câu chuyện ngôi nhà mình.</p>
+			<ol class="breadcrumb">
+				<li><a href="#">Trang chủ</a></li>
+				<li class="active">Sản phẩm</li>
+			</ol>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-default" id="shop-menu">
+				<!-- <div class="container-fluid"> -->
+					<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target=".shop-nav">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse pull-left shop-nav">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+								<form>
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lọc theo hãng sản xuất <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li class="checkbox"><input type="checkbox" name="brand1" value="brand1">IKEA</li>
+										<li role="separator" class="divider"></li>
+										<li class="checkbox"><input type="checkbox" name="brand2" value="brand2">Hooker</li>
+										<li role="separator" class="divider"></li>
+										<li class="checkbox"><input type="checkbox" name="brand3" value="brand3">Ashley</li>
+										<li role="separator" class="divider"></li>
+										<li class="checkbox"><input type="checkbox" name="brand4" value="brand4">Stanford</li>
+										<li role="separator" class="divider"></li>
+										<li class="checkbox"><input type="checkbox" name="brand5" value="brand5">Stickley</li>
+										<li role="separator" class="divider"></li>
+										<li><input class="filter" id="brand" type="submit" value="Xem kết quả"/></li>
+									</ul>
+								</form>
+							</li>
+							<li class="dropdown">
+								<form>
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lọc theo mức giá <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li class="checkbox"><input type="checkbox" name="price1" value="price1">Dưới 1 triệu</li>
+										<li role="separator" class="divider"></li>
+										<li class="checkbox"><input type="checkbox" name="price2" value="price2">Từ 1 triệu đến 3 triệu</li>
+										<li role="separator" class="divider"></li>
+										<li class="checkbox"><input type="checkbox" name="price3" value="price3">Từ 3 triệu đến 5 triệu</li>
+										<li role="separator" class="divider"></li>
+										<li class="checkbox"><input type="checkbox" name="price4" value="price4">Từ 5 triệu đến 10 triệu</li>
+										<li role="separator" class="divider"></li>
+										<li class="checkbox"><input type="checkbox" name="price5" value="price5">Trên 10 triệu</li>
+										<li role="separator" class="divider"></li>
+										<li><input class="filter" id="price" type="submit" value="Xem kết quả"/></li>
+									</ul>
+								</form>
+							</li>
+							<li class="dropdown">
+								<form>
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lọc theo màu sắc <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li class="checkbox"><input type="checkbox" name="color1" value="color1">Đen</li>
+										<li role="separator" class="divider"></li>
+										<li class="checkbox"><input type="checkbox" name="color2" value="color2">Trắng</li>
+										<li role="separator" class="divider"></li>
+										<li class="checkbox"><input type="checkbox" name="color3" value="color3">Nâu</li>
+										<li role="separator" class="divider"></li>
+										<li class="checkbox"><input type="checkbox" name="color4" value="color4">Xám</li>
+										<li role="separator" class="divider"></li>
+										<li class="checkbox"><input type="checkbox" name="color5" value="color5">Xanh lá</li>
+										<li role="separator" class="divider"></li>
+										<li><input class="filter" id="color" type="submit" value="Xem kết quả"/></li>
+									</ul>
+								</form>
+							</li>
+						</ul>
+					</div>
+
+					<select class="form-control pull-right">
+						<option disabled selected hidden>Sắp xếp</option>
+						<option value="sort1">Thứ tự mặc định</option>
+						<option value="sort2">Thứ tự theo sản phẩm mới</option>
+						<option value="sort3">Thứ tự theo giá: thấp đến cao</option>
+						<option value="sort4">Thứ tự theo giá: cao đến thấp</option>
+					</select>
+					
+				<!-- </div> -->
+			</nav>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.js" ></script>
+	<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+</body>
+</html>
