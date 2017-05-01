@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thanh toán</title>
+	<link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="search">
+				<i class="fa fa-search"></i><span class="hidden-xs"> Tìm kiếm</span>
+			</a>
+			<div class="container">
+				<div class="menu row">
+					<div class="collapse navbar-collapse" id="menu-collapse">
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="#">Trang chủ</a></li>
+							<li><a href="#">Sản phẩm</a></li>
+							<li><a href="#">Dự án</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Về Min</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Liên hệ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="cart-box">
+				<a href="#">
+					<i class="fa fa-heart-o"></i>
+				</a>
+				<a href="#">
+					<i class="fa fa-shopping-cart"></i>
+				</a>
+			</div>
+			<a class="logo" href="#"><img src="img/logo-min.png"></a>
+		</nav>
+	</header>
+	<div class="container payment-main">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<div class="deli-address">
+					<h3>Thông tin giao hàng và thanh toán</h3>
+					<form>
+						<h4>Thông tin giao hàng</h4>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Sử dụng thông tin tài khoản
+							</label>
+						</div>
+						<input type="text" class="form-control" id="name" placeholder="Họ tên">
+						<input type="text" class="form-control" id="phone" placeholder="Số điện thoại">
+						<select class="form-control">
+							<option disabled selected hidden>Tỉnh / Thành phố</option>
+							<option>Hà Nội</option>
+							<option>Hồ Chí Minh</option>
+							<option>Đà Nẵng</option>
+						</select>
+						<select class="form-control">
+							<option disabled selected hidden>Quận / Huyện</option>
+							<option>Ba Đình</option>
+							<option>Đống Đa</option>
+							<option>Hai Bà Trưng</option>
+						</select>
+						<select class="form-control">
+							<option disabled selected hidden>Phường / Xã</option>
+							<option>Cát Linh</option>
+							<option>Kim Liên</option>
+							<option>Ô Chợ Dừa</option>
+						</select>
+						<input type="text" class="form-control" id="address" placeholder="Địa chỉ">
+						<input type="text" class="form-control" id="note" placeholder="Ghi chú">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" class="open-option"> Thanh toán tại địa chỉ khác 
+							</label>
+						</div>
+						<div class="optional" style="display: none;">
+							<input type="text" class="form-control" id="name" placeholder="Họ tên">
+							<input type="text" class="form-control" id="phone" placeholder="Số điện thoại">
+							<select class="form-control">
+								<option disabled selected hidden>Tỉnh / Thành phố</option>
+								<option>Hà Nội</option>
+								<option>Hồ Chí Minh</option>
+								<option>Đà Nẵng</option>
+							</select>
+							<select class="form-control">
+								<option disabled selected hidden>Quận / Huyện</option>
+								<option>Ba Đình</option>
+								<option>Đống Đa</option>
+								<option>Hai Bà Trưng</option>
+							</select>
+							<select class="form-control">
+								<option disabled selected hidden>Phường / Xã</option>
+								<option>Cát Linh</option>
+								<option>Kim Liên</option>
+								<option>Ô Chợ Dừa</option>
+							</select>
+							<input type="text" class="form-control" id="address" placeholder="Địa chỉ">
+							<input type="text" class="form-control" id="note" placeholder="Ghi chú">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<div class="cart-total">
+					<h3>Thông tin đơn hàng</h3>
+					<table>
+						<tbody>
+							<tr class="cart-subtotal">
+								<th>Tạm tính</th>
+								<td>7.000.000</td>
+							</tr>
+							<tr class="deli-fee">
+								<th>Phí giao hàng</th>
+								<td>0</td>
+							</tr>
+							<tr class="order-total">
+								<th>Tổng tiền</th>
+								<td class="amount"><strong>7.000.000</strong></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="checkout-proceed">
+						<a href="#" class="checkout-button">
+							Đặt hàng
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.js" ></script>
+	<script src="owlcarousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+</body>
+</html>

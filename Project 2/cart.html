@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Giỏ hàng</title>
+	<link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="search">
+				<i class="fa fa-search"></i><span class="hidden-xs"> Tìm kiếm</span>
+			</a>
+			<div class="container">
+				<div class="menu row">
+					<div class="collapse navbar-collapse" id="menu-collapse">
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="#">Trang chủ</a></li>
+							<li><a href="#">Sản phẩm</a></li>
+							<li><a href="#">Dự án</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Về Min</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Liên hệ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="cart-box">
+				<a href="#">
+					<i class="fa fa-heart-o"></i>
+				</a>
+				<a href="#">
+					<i class="fa fa-shopping-cart"></i>
+				</a>
+			</div>
+			<a class="logo" href="#"><img src="img/logo-min.png"></a>
+		</nav>
+	</header>
+	<div class="container-fluid page-heading cart-heading">
+		<div class="heading-content">
+			<h1>Giỏ hàng</h1>
+			<p></p>
+			<ol class="breadcrumb">
+				<li><a href="#">Trang chủ</a></li>
+				<li class="active">Giỏ hàng</li>
+			</ol>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="cart-container">
+					<table class="cart">
+						<thead>
+							<tr>
+								<th class="product-thumbnail">Sản phẩm</th>
+								<th class="product-name">Tên sản phẩm</th>
+								<th class="product-price">Đơn giá</th>
+								<th class="product-quantity">Số lượng</th>
+								<th class="product-subtotal">Thành tiền</th>
+								<th class="product-remove">&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="cart-item">
+								<td class="product-thumbnail">
+									<a href="shop-detail.html">
+										<img src="img/riflesso_1.jpg">
+									</a>
+								</td>
+								<td class="product-name">
+									<a href="shop-detail.html">Tủ Riflesso</a> 
+								</td>
+								<td class="product-price">
+									4400000
+								</td>
+								<td class="product-quantity">
+									<div class="quantity">
+										<button class="qty-decrease" onclick="" type="button">-</button>
+										<input id="qty" type="text" name="quantity" value="1" class="" size="4">
+										<button class="qty-increase" onclick="" type="button">+</button>
+									</div>
+								</td>
+								<td class="product-subtotal">
+									
+								</td>
+								<td class="product-remove">
+									<button><i class="fa fa-trash-o"></i></button>
+								</td>
+							</tr>
+							<tr class="cart-item">
+								<td class="product-thumbnail">
+									<a href="shop-detail.html">
+										<img src="img/rotonda_1.jpg" alt="">
+									</a>
+								</td>
+								<td class="product-name">
+									<a href="shop-detail.html">Bàn La Rotonda </a> 
+								</td>
+								<td class="product-price">
+									3200000
+								</td>
+								<td class="product-quantity">
+									<div class="quantity">
+										<button class="qty-decrease" onclick="" type="button">-</button>
+										<input id="qty" type="text" name="quantity" value="1" class="" size="4">
+										<button class="qty-increase" onclick="" type="button">+</button>
+									</div>
+								</td>
+								<td class="product-subtotal">
+									
+								</td>
+								<td class="product-remove">
+									<button><i class="fa fa-trash-o"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="6" class="actions">
+									<a class="empty-cart" href="#">Xóa toàn bộ</a>
+									<a class="continue" href="#">Tiếp tục mua hàng</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="cart-checkout container">
+					<div class="col-xs-12 col-sm-6">
+						<div class="cart-coupon">
+							<h3>Mã giảm giá</h3>
+							<input type="text" value="" placeholder="Nhập mã giảm giá">
+							<button class="apply-coupon">Áp dụng mã giảm giá</button>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<div class="cart-total">
+							<h3>Tổng tiền</h3>
+							<table>
+								<tbody>
+									<tr class="cart-subtotal">
+										<th>Tạm tính</th>
+										<td></td>
+									</tr>
+									<tr class="cart-discount">
+										<th>Giảm giá<span class="discount-rate"></span></th>
+										<td>0</td>
+									</tr>
+									<tr class="order-total">
+										<th>Tổng tiền</th>
+										<td class="amount"><strong></strong></td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="checkout-proceed">
+								<a href="#" class="checkout-button">
+									Tiến hành đặt hàng
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.js" ></script>
+	<script src="owlcarousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+</body>
+</html>
