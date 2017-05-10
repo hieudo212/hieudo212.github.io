@@ -1,4 +1,5 @@
 var sum = 0, total, discount, discountRate=0;
+var $navMenuCont;
 $(document).ready(function(){
     // $('.box').css({'transform':'translateX(0)','opacity':1});
     // $('.box-title').css({'transform':'translateX(0)','opacity':1});
@@ -68,6 +69,23 @@ $(document).ready(function(){
     $('[data-toggle="slide-collapse"]').on('click', function() {
         $navMenuCont = $($(this).data('target'));
         $navMenuCont.animate({'width':'toggle'}, 350);
+        
+
+        // $navMenuCont.find('.nav').click(function(event){
+            // return false;
+            // event.stopPropagation();
+        // });
+        return false;
+        // event.stopPropagation();
+    });
+
+    $(window).click(function() {
+        if ($('.side-nav').css("display") == "block" && window.innerWidth < 768) {
+            $('.side-nav').animate({'width':'toggle'}, 350);
+            event.stopPropagation();
+        } else {
+            event.stopPropagation();
+        }
     });
 
     $('[data-toggle="filter-display"]').each(function () {
@@ -141,6 +159,24 @@ $(document).ready(function(){
     //         $('.col-item').removeAttr('style');
     //     });
     // });
+    $('.user-modal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget); // Button that triggered the modal
+        var tabId = button.data('tabs'); // Extract info from data-* attributes
+        $(this).find('.nav-tabs>li').removeClass('active');
+        $(this).find('#' + tabId + '-indicator').addClass('active');
+        $(this).find('.tab-pane').removeClass('active in');
+        $(this).find('.tab-pane#' + tabId).addClass('active in');
+    });
+
+    $('#login-btn').click(function(){
+        $('.before-log').hide();
+        $('.logged').css('display','flex');
+    });
+    $('#logout-btn').click(function(){
+        $('.logged').hide();
+        $('.before-log').show();
+        event.preventDefault();
+    });
 });
 
 $('td.product-price').each(function () {   
