@@ -582,7 +582,7 @@ a.link-to:hover i.fa::after {
 		margin-left: auto;
 	}
 	.block1 {
-		margin-bottom: -50%;
+		margin-bottom: -50vw;
 	}
 }
 
@@ -597,7 +597,7 @@ a.link-to:hover i.fa::after {
 		margin-left: auto;
 	}
 	.block1 {
-		margin-bottom: -50%;
+		margin-bottom: -25vw;
 	}
 }
 .block, .block-container {
