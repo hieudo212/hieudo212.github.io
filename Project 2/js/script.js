@@ -249,6 +249,11 @@ function checkY(){
         $('.slogan').find('a').css({'transform':'translateY(0)','opacity':1});
         $('.slogan').find('h3').animate({width:'200px',opacity:1},1500);
     }
+    if ($(window).scrollTop() > 500) {
+        $('.back-top').fadeIn('slow');
+    } else {
+        $('.back-top').fadeOut('slow');
+    }
     // startY = $('.section-title.style').position().top;
     // if( $(window).scrollTop() > startY ){
     //     $('.style-title').slideDown(800);
