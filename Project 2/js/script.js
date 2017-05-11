@@ -177,6 +177,18 @@ $(document).ready(function(){
         $('.before-log').show();
         event.preventDefault();
     });
+    $("#to-about").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#about-min").offset().top},
+            'slow');
+        return false;
+    });
+    $(".back-top").click(function() {
+        $('html,body').animate({
+            scrollTop: $("header").offset().top},
+            'slow');
+        return false;
+    });
 });
 
 $('td.product-price').each(function () {   
