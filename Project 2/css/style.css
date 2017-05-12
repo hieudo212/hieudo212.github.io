@@ -1825,7 +1825,7 @@ a.blog-link:hover::before, .blog-link a:hover::before {
 		width: 90px;
 	}
 	.cart-container table.cart td.product-price {
-		transform: translate(0,-15px);
+		transform: translate(-5px,-15px);
 	}
 	.cart-container table.cart td.product-quantity {
 		transform: translate(-80px,15px);
