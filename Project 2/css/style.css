@@ -997,10 +997,10 @@ i.fa-search-plus {
 	.project-container .project-title {
 		height: 90px;
 	}
-	/*.project-container:hover {
-		margin: 10px 0;
+	.project-container:hover {
+		/*margin: 10px 0;*/
 		width: 100%;
-	}*/
+	}
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
