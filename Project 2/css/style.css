@@ -1740,6 +1740,70 @@ a.blog-link:hover::before, .blog-link a:hover::before {
     width: 4%;
     text-align: center;
 }
+.quantity {
+    font-weight: 600;
+    /*border-radius: 20px;*/
+    border: 1px solid #eeeeee;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+}
+.quantity button {
+    border: 0;
+    background: none;
+    height: 40px;
+    width: auto;
+    padding: 0 15px;
+    transition: all 0.4s ease 0s;
+    outline: none;
+}
+.cart-container table.cart .product-quantity input {
+    width: 30px;
+    text-align: center;
+    border: 0;
+}
+.cart-container table.cart img {
+    width: 85px;
+    height: auto;
+    border: 1px solid #e7e7e7;
+}
+@media (max-width: 767px) {
+	.cart-container {
+		padding: 20px 15px;
+	}
+	.cart-container table.cart img {
+		width: 60px;
+		height: auto;
+	}
+	.cart-container table.cart .product-subtotal {
+		display: none;
+	}
+	.cart-container table.cart .product-name {
+		width: 30%;
+	}
+	.cart-container table.cart .product-price {
+		width: 22%;
+	}
+	.cart-container table.cart .product-quantity {
+		width: 20%;
+	}
+	.cart-container table.cart .product-thumbnail {
+		width: 24%;
+		padding-left: 10px;
+	}
+	.cart-container table.cart th.product-thumbnail {
+		padding-left: 10px;
+	}
+	.cart-container table.cart .product-quantity .quantity {
+		width: 60px;
+	}
+	.cart-container table.cart .product-quantity input {
+		width: 12px;
+	}
+	.cart-container table.cart .product-quantity .quantity>button {
+		padding: 0 8px;
+	}
+}
 .product-remove button {
 	background: none;
 	border: 0;
@@ -1752,38 +1816,11 @@ a.blog-link:hover::before, .blog-link a:hover::before {
     font-weight: 600;
     text-transform: uppercase;
 }
-.cart-container table.cart img {
-    width: 85px;
-    height: auto;
-    border: 1px solid #e7e7e7;
-}
-.quantity {
-    font-weight: 600;
-    /*border-radius: 20px;*/
-    border: 1px solid #eeeeee;
-    font-size: 16px;
-    width: 100px;
-    text-align: center;
-}
-.quantity .qty-decrease {
+.cart-container table.cart .product-quantity .quantity .qty-decrease {
     padding-right: 5px;
 }
-.quantity .qty-increase {
+.cart-container table.cart .product-quantity .quantity .qty-increase {
     padding-left: 5px;
-}
-.quantity button {
-    border: 0;
-    background: none;
-    height: 40px;
-    width: auto;
-    padding: 0 15px;
-    transition: all 0.4s ease 0s;
-    outline: none;
-}
-.cart-container table.cart .cart-item .product-quantity input {
-    width: 30px;
-    text-align: center;
-    border: 0;
 }
 td.product-price::after, td.product-subtotal::after, .cart-subtotal td::after, .cart-discount td::after, .amount::after, .deli-fee td::after {
 	content: '₫';
