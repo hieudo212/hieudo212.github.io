@@ -1847,10 +1847,10 @@ a.blog-link:hover::before, .blog-link a:hover::before {
     font-weight: 600;
     text-transform: uppercase;
 }
-.cart-container table.cart .product-quantity .quantity .qty-decrease {
+.cart-container table.cart .product-quantity .quantity .qty-decrease, .quantity .qty-decrease {
     padding-right: 5px;
 }
-.cart-container table.cart .product-quantity .quantity .qty-increase {
+.cart-container table.cart .product-quantity .quantity .qty-increase, .quantity .qty-increase {
     padding-left: 5px;
 }
 td.product-price::after, td.product-subtotal::after, .cart-subtotal td::after, .cart-discount td::after, .amount::after, .deli-fee td::after {
